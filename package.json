@@ -4,10 +4,8 @@
   "description": "",
   "main": ".eslintrc.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "watch": "webpack --watch",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open -w",
+    "build": "webpack --config ./webpack.config.js"
   },
   "author": "Liuba",
   "license": "ISC",
@@ -24,6 +22,12 @@
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.4.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
     "express": "^4.17.1",
     "file-loader": "^5.0.2",
     "html-webpack-plugin": "^3.2.0",

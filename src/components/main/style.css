@@ -1,0 +1,44 @@
+.header {
+  background-color: yellow;
+  display: flex;
+  position: absolute;
+  left: 375px;
+  top: 101px;
+  width: 1170px;
+  height: 99px;
+  z-index: 0;
+}
+.header .telegram {
+  left: 0px;
+  top: 0px;
+  width: 1920px;
+  height: 2724px;
+  z-index: 0;
+}
+.header .left_wing {
+  width: 0;
+  height: 0;
+  border-top: 28px solid #48b0e3;
+  border-right: 54px solid transparent;
+  z-index: 65;
+  -webkit-transform: skew(120deg);
+  -o-transform: skew(100deg);
+}
+.header .textHeader {
+  display: flex;
+  flex-direction: column;
+}
+.header .site_name {
+  font-size: 153.333px;
+  font-family: "Lato";
+  color: #003d48;
+  line-height: 0.978;
+  text-align: left;
+  -moz-transform: matrix(0.15405961, 0, 0, 0.15405961, 0, 0);
+  -webkit-transform: matrix(0.15405961, 0, 0, 0.15405961, 0, 0);
+  -ms-transform: matrix(0.15405961, 0, 0, 0.15405961, 0, 0);
+  position: absolute;
+  left: 203.421px;
+  top: 66.02px;
+  z-index: 59;
+}

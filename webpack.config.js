@@ -4,8 +4,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
+  target: 'web',
   mode: 'development',
-  entry: './src/index.js',
+  entry: './src/index.jsx',
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve('dist'),
+  },
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',
@@ -16,52 +21,35 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.(js|jsx)?$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
-        query: {
-          presets: ['@babel/env', '@babel/react'],
-        },
       },
       {
         test: /\.css$/,
+        // test: /\s?.css$/,
         use: [
           'style-loader',
           'css-loader',
         ],
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(png|svg|jpg|gif)$/,
         use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'fonts/',
-            },
-          },
+          'file-loader',
         ],
       },
       {
-             test: /\.(png|svg|jpg|gif)$/,
-             use: [
-               'file-loader',
-            ],
-           },
-           {
-            test: /\.less$/,
-            loader: 'less-loader', // compiles Less to CSS
-          },
+        test: /\.less$/,
+        loader: 'less-loader', // compiles Less to CSS
+      },
     ],
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'Output Management',
+      template: './index.html',
     }),
   ],
-  output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-  },
 };
