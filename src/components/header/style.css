@@ -1,0 +1,48 @@
+.header {
+  width: 1170px;
+  background-color: ffffff;
+}
+.header .Paper_plane {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1920px;
+  height: 2724px;
+  z-index: 0;
+}
+.header .right_wing {
+  background-color: #48b0e3;
+  position: absolute;
+  left: 435px;
+  top: 126px;
+  width: 23px;
+  height: 44px;
+  z-index: 63;
+}
+.header .left_wing {
+  background-color: #48b0e3;
+  position: absolute;
+  left: 404px;
+  top: 126px;
+  width: 54px;
+  height: 28px;
+  z-index: 65;
+}
+.header .inside {
+  background-color: #359dd0;
+  position: absolute;
+  left: 419px;
+  top: 126px;
+  width: 39px;
+  height: 46px;
+  z-index: 64;
+}
+.header .bottom_dark {
+  background-color: #2485b4;
+  position: absolute;
+  left: 431px;
+  top: 156px;
+  width: 11px;
+  height: 16px;
+  z-index: 62;
+}
