@@ -5,7 +5,8 @@
   "main": ".eslintrc.js",
   "scripts": {
     "start": "webpack-dev-server --open -w",
-    "build": "webpack --config ./webpack.config.js"
+    "build": "webpack --config ./webpack.config.js",
+    "lint": "eslint --ext js,jsx src"
   },
   "author": "Liuba",
   "license": "ISC",
@@ -22,16 +23,19 @@
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.4.2",
-    "eslint": "^6.8.0",
+    "eslint": "^6.7.1",
     "eslint-config-airbnb": "^18.0.1",
-    "eslint-plugin-import": "^2.20.0",
+    "eslint-import-resolver-babel-module": "^5.1.0",
+    "eslint-plugin-babel": "5.3.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.18.0",
-    "eslint-plugin-react-hooks": "^1.7.0",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
     "express": "^4.17.1",
     "file-loader": "^5.0.2",
     "html-webpack-plugin": "^3.2.0",
     "less-loader": "^5.0.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "webpack-dev-middleware": "^3.7.2",

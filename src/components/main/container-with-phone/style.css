@@ -1,0 +1,22 @@
+.containerForPhone {
+  height: 374px;
+  background-image: linear-gradient(to top, #ffffff, #e7e7e7);
+  display:flex;
+  justify-content: space-evenly;
+}
+.phoneImg {
+  align-self:flex-end;
+}
+.textImg {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+.button {
+    width: 132px;
+    height: 47px;
+    background-color: #f77462;
+    border-radius: 10px;
+}
+

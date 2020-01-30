@@ -1,0 +1,17 @@
+*{
+  box-sizing: border-box;
+}
+.header {
+  background-color: #ffffff;
+  height: 99px;
+  display:flex;
+ 
+padding: 30px;}
+.header .textHeader {
+  display: flex;
+  flex-direction: column;
+  left: 102px;
+}
+.menu{
+  margin-left: auto;
+}
