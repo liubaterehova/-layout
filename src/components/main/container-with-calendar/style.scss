@@ -1,0 +1,133 @@
+.containerWithCalendar {
+  height: 780px;
+  background-color: #ffffff;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing:border-box;
+  .header {
+  font-family: SourceSansPro;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.9;
+  letter-spacing: normal;
+  color: #003d48;
+  }
+  .textUnderHeader {
+    width: 631px;
+    font-family: SourceSansPro;
+    font-size: 22px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: normal;
+    text-align: center;
+    color: #6dc5dd;
+  }
+  .hr {
+    background-color: rgb(236, 236, 236);
+    margin:10px;
+    width: 97%;
+    height: 2px; 
+  }
+  .calendarAndComments{
+    display: flex;
+    align-items: flex-start;
+
+  }
+  .calendar{
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    .row{
+      padding:40px;
+      .textForData{
+        display:flex;
+        flex-direction: column;
+        padding-left:25px;
+        .headerTextCalendar{
+          font-family: SourceSansPro;
+          font-size: 16px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.8;
+          letter-spacing: normal;
+          color: #003d48;
+        }
+        .commentsForData{
+          font-family: SourceSansPro;
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 2.06;
+          letter-spacing: normal;
+          color: #f77462;
+
+        }
+        .textUnderComments{
+          font-family: SourceSansPro;
+          font-size: 15px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.6;
+          letter-spacing: normal;
+          color: #787878;
+          width: 425px;
+        }
+      }
+    }
+  }
+  .comments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .blockComment {
+      margin: 30px;
+      width: 542px;
+      height: 196px;
+      border: solid 2px #ececec;
+      background-color: #ececec;
+      display:flex;
+      align-items: flex-start;
+      .textComment {
+        display:flex;
+        flex-direction: column;
+      }
+      .text{
+        font-family: SourceSansPro;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        color: #8c9193;
+      }
+      .author {
+        padding-left:25px;
+        font-family: SourceSansPro;
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.8;
+        letter-spacing: normal;
+        color: #f77462;
+      }
+      .message {
+        padding:20px;
+      }
+
+    }
+
+  }
+
+}
+

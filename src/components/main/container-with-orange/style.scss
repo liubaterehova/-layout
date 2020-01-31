@@ -1,0 +1,28 @@
+.containerWithOrange {
+  background-color: #f77462;
+  height: 209px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing:border-box;
+
+  .textContainer {
+
+    width: 683px;
+    font-family: SourceSansPro;
+    font-size: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.9;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    .textUnderHeader {
+      padding: 20px;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.6;
+    }
+  }
+}

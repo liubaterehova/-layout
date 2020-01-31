@@ -2,6 +2,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const ExtractTextPlugin = require('Extract-text-webpack-plugin');
+const LinkTypePlugin = require('html-webpack-link-type-plugin').HtmlWebpackLinkTypePlugin;
 
 module.exports = {
   target: 'web',
@@ -23,37 +25,51 @@ module.exports = {
       {
         test: /\.(js|jsx)?$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
+        use: [
+          {
+            loader:'babel-loader'
+          }, 
+          {
+            loader:'eslint-loader'
+          },
+        ],
       },
       {
         test: /\.css$/,
-        // test: /\s?.css$/,
-        use: [
-          'style-loader',
-          'css-loader',
-        ],
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: 'css-loader',
+        }),
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.scss$/,
+        exclude: /node_modules/,
         use: [
-          // Creates `style` nodes from JS strings
-          'style-loader',
-          // Translates CSS into CommonJS
-          'css-loader',
-          // Compiles Sass to CSS
-          'sass-loader',
+            {
+                loader: 'style-loader',
+            },
+            {
+                loader: 'css-loader',
+                options: {
+                    sourceMap: true,
+                },
+            },
+            {
+                loader: 'sass-loader',
+                options: {
+                    sourceMap: true,
+                },
+            },
         ],
-      },
+    },
+     
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
           'file-loader',
         ],
       },
-      {
-        test: /\.less$/,
-        loader: 'less-loader', // compiles Less to CSS
-      },
+    
     ],
   },
   plugins: [
@@ -61,6 +77,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Output Management',
       template: './index.html',
+    }),
+    new ExtractTextPlugin({
+      filename: './css/style.bundle.css',
+      allChunks: true,
+    }),
+    new LinkTypePlugin({
+      '*.css' : 'text/css'
     }),
   ],
 };

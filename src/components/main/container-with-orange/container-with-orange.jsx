@@ -1,7 +1,13 @@
 import React from 'react';
-import './style.css';
+import './style.scss';
 
 export const ContainerWithOrange = () => (
   <div className="containerWithOrange">
+    <div className="textContainer">
+      <div>Praesent Clacerat</div>
+      <div className="textUnderHeader">Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet
+    lectus arcu pulvinar risus.
+      </div>
+    </div>
   </div>
 );

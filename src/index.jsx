@@ -3,4 +3,4 @@ import ReactDOM from 'react-dom';
 
 import { Page } from './components/page/page';
 
-ReactDOM.render(<Page/>, document.getElementById('root'));
+ReactDOM.render(<Page />, document.getElementById('root'));

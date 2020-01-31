@@ -1,0 +1,29 @@
+.containerWithBlue {
+  background-color: #6dc5dd;
+  height: 273px;
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+}
+
+.text {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: space-around;
+  height:100%;
+  padding:30px;
+}
+.row {
+  display:flex;
+  flex:1;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: flex-start;
+  height:100%;
+}
+.circle {
+  align-self:start;
+  padding:40px;
+}
