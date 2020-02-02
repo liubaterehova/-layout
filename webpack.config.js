@@ -27,10 +27,10 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader:'babel-loader'
-          }, 
+            loader: 'babel-loader',
+          },
           {
-            loader:'eslint-loader'
+            loader: 'eslint-loader',
           },
         ],
       },
@@ -45,31 +45,31 @@ module.exports = {
         test: /\.scss$/,
         exclude: /node_modules/,
         use: [
-            {
-                loader: 'style-loader',
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
             },
-            {
-                loader: 'css-loader',
-                options: {
-                    sourceMap: true,
-                },
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
             },
-            {
-                loader: 'sass-loader',
-                options: {
-                    sourceMap: true,
-                },
-            },
+          },
         ],
-    },
-     
+      },
+
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
           'file-loader',
         ],
       },
-    
+
     ],
   },
   plugins: [
@@ -83,7 +83,7 @@ module.exports = {
       allChunks: true,
     }),
     new LinkTypePlugin({
-      '*.css' : 'text/css'
+      '*.css': 'text/css',
     }),
   ],
 };

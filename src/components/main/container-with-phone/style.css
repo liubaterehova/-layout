@@ -19,4 +19,9 @@
     background-color: #f77462;
     border-radius: 10px;
 }
+@media( max-width: 880px) {
+  .phoneImg {
+    display: none;
+  }
+}
 

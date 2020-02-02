@@ -3,19 +3,19 @@
   height: 576px;
   background-color: #ffffff;
   display: flex;
-  align-content: space-around;
+  align-content: center;
+  justify-content: space-evenly;
   height: 100%;
   padding-top:40px;
+  padding-right:20px;
   .people {
+    flex: 0;
     display: flex;
     flex-direction: column;
-    padding-left: 140px;
-    padding:20px;
-    flex:1;
-    height:100%
-
+    height:100%;
   }
   .woman {
+    justify-content: flex-end;
     display: flex;
     height:100%;
     padding-bottom:20px;
@@ -46,65 +46,77 @@
   
   }
   .table{
-    flex:1;
-    .tableUpperPart{
-      .tab {
-      border-radius:5px 5px 0 0;
-      border-style: solid;
-      border-width: 2px;
-      width: 103px;
-      height: 45px;
-      font-size: 16px;
-      font-family: "SourceSansPro";
-      line-height: 1.8;
-      font-weight: bold;
-      }
-      .active {
-        background-color: rgb(0, 61, 72);
-        border:none;
-      }
-      .nonActive {
-        background-color: white;
-      }
-      .tabActive {
-        color: rgb(247, 116, 98);
-      }
-      .tabNonActive {
-        color: rgb(120, 120, 120);
-      }
-      .tabletext{
-        background-color: #003d48;
-        padding: 20px;
-        width:343px;
-        
-        .sedeginText {
+    flex: 0;
+
+    .menuTab{
+      width: 343px;
+      .tableUpperPart {
+        .tab {
+          border-radius:5px 5px 0 0;
+          border-style: solid;
+          border-width: 2px;
+          width: 103px;
+          height: 45px;
+          font-size: 16px;
           font-family: "SourceSansPro";
-          color: rgb(109, 197, 221);
+          line-height: 1.8;
           font-weight: bold;
-          line-height: 1.44;
-          text-align: left;
         }
-        .simalesText {
-          font-size: 15px;
-          font-family: "SourceSansPro";
-          color: white;
-          line-height: 1.6;
-          text-align: justify;
+        .active {
+          background-color: rgb(0, 61, 72);
+          border:none;
         }
-      }
+        .nonActive {
+          background-color: white;
+        }
+        .tabActive {
+          color: rgb(247, 116, 98);
+        }
+        .tabNonActive {
+          color: rgb(120, 120, 120);
+        }
+        .tabletext{
+          background-color: #003d48;
+          padding: 20px;
+          
+          .sedeginText {
+            font-family: "SourceSansPro";
+            color: rgb(109, 197, 221);
+            font-weight: bold;
+            line-height: 1.44;
+            text-align: left;
+          }
+          .simalesText {
+            font-size: 15px;
+            font-family: "SourceSansPro";
+            color: white;
+            line-height: 1.6;
+            text-align: justify;
+          }
+        }
       }
       .list {
           border-style: solid;
           border-width: 2px;
           border-color: rgb(236, 236, 236);
           background-color: rgb(255, 255, 255);
-          width: 344px;
         }
         li {
           padding: 10px;
         }
       }
+      }
     }
-
+    @media (max-width: 1100px) {
+      .containerForGuys{
+        flex-direction: column;
+        .table {
+          align-self: center;
+        }
+        .people {
+          align-items: center;
+      }
+    }
+  }
     
  
