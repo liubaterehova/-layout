@@ -1,27 +1,56 @@
 .containerForPhone {
-  height: 374px;
   background-image: linear-gradient(to top, #ffffff, #e7e7e7);
   display:flex;
   justify-content: space-evenly;
-}
-.phoneImg {
-  align-self:flex-end;
-}
-.textImg {
-  display:flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  padding-top:50px;
 
-}
-.button {
-    width: 132px;
-    height: 47px;
-    background-color: #f77462;
-    border-radius: 10px;
-}
-@media( max-width: 880px) {
   .phoneImg {
-    display: none;
+    align-self:flex-end;
+  }
+  .textNearPhone {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color:#003d48;
+    .textNearPhoneFirstPart {
+      font-family: SourceSansPro;
+      font-size: 31px;
+      font-weight: 300;
+    }
+    .textNearPhoneSecondPart {
+      font-size: 43px;
+      font-weight: 900;
+    }
+    .textNearPhoneThirdPart {
+      font-size: 18px;
+      font-weight: normal;
+      color: #8b8b8b;
+    }
+    .button {
+        width: 132px;
+        height: 47px;
+        background-color: #f77462;
+        border-radius: 10px;
+    }
   }
 }
-
+@media ( max-width: 880px){
+  // .phoneImg {
+  //   display: none;
+  // }
+  .containerForPhone{
+    .textNearPhone{
+      .textNearPhoneFirstPart {
+        font-size: 5vw;
+        background-color: lightgreen;
+  }}}
+    
+  }
+// @media( max-width: 320px) {
+//   .textNearPhoneFirstPart {
+//     font-size: 15px;
+//   }
+//   .textNearPhoneSecondPart {
+//     font-size: 15px;
+//   }
+// }

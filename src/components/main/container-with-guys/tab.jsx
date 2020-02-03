@@ -5,7 +5,7 @@ import Arrows from '../../png/fiveArrows.png';
 export const Tab = () => (
   <div className="menuTab">
     <div className="tableUpperPart">
-      <div className="tabs">
+      <div>
         <button type="button" className="tab active"><span className="tabActive">Eronped</span></button>
         <button type="button" className="tab nonActive"><span className="tabNonActive">Centro</span></button>
       </div>
@@ -17,7 +17,7 @@ export const Tab = () => (
     <div className="tableDownPart" />
     <div className="list">
       <div className="arrows"><img src={Arrows} alt="arrows" /></div>
-      <div className="ul-li">
+      <div>
         <ul>
           <li>Cras ornare tristique elit  sinto sum</li>
           <div className="hrForLi" />

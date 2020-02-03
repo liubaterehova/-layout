@@ -7,16 +7,12 @@ export const PersonCard = ({
 }) =>
   (
     <div className="person">
-      <div className="photo">
+      <div>
         <img src={photo} alt={altForPhoto} />
       </div>
       <div className="textNearPhoto">
-        <div>
-          <img src={text1} alt={altForPhoto} />
-        </div>
-        <div>
-          <img src={text2} alt={altForPhoto} />
-        </div>
+        <div className="personText">{text1}</div>
+        <div className="personText2">{text2}</div>
         <div>
           <input type="button" className="button" value="More" />
         </div>

@@ -42,27 +42,84 @@
     flex: 1;
     width: 100%;
     align-items: center;
-    
-   
-  }
-  .calendar{
-    display: flex;
-    height: 460px;
-    flex: 1;
-    flex-direction: column;
-    justify-content: space-between;
-    .row{
+  
+    .calendar{
       display: flex;
-      flex-direction: row;
+      flex: 1;
+      flex-direction: column;
+      justify-content: space-between;
+      .row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+        margin-bottom:10px;
+        .textForData{
+          display:flex;
+          flex-direction: column;
+          padding-left:25px;
+          .headerTextCalendar{
+            flex: 2;
+            font-family: SourceSansPro;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.8;
+            color: #003d48;
+          }
+          .commentsForData{
+            flex:1;
+            font-family: SourceSansPro;
+            font-size: 14px;
+            line-height: 2.06;
+            color: #f77462;
+          }
+          .textUnderComments{
+            flex:2;
+            font-family: SourceSansPro;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #787878;
+           
+            .arrow {
+              padding-left: 10px;
+              border: none;
+              background-color: white;
+            }
+          }
+        }
+      }
+    }
+    .comments {
+      width: 70%;
+      flex:1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
-      align-items: flex-start;
-      height: 100%;
-      .textForData{
+      .blockComment {
+        width:80%;
+        margin-bottom: 30px;
+        border: solid 2px #ececec;
+        background-color: #ececec;
         display:flex;
-        flex-direction: column;
-        padding-left:25px;
-        .headerTextCalendar{
-          flex: 2;
+        align-items: center;
+        .textComment {
+          display:flex;
+          flex-direction: column;
+          padding-left:10px;
+        }
+        .text{
+          font-family: SourceSansPro;
+          font-size: 15px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          color: #8c9193;
+        }
+        .author {
           font-family: SourceSansPro;
           font-size: 16px;
           font-weight: bold;
@@ -70,80 +127,11 @@
           font-style: normal;
           line-height: 1.8;
           letter-spacing: normal;
-          color: #003d48;
-        }
-        .commentsForData{
-          flex:1;
-          font-family: SourceSansPro;
-          font-size: 14px;
-          font-weight: normal;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: 2.06;
-          letter-spacing: normal;
           color: #f77462;
         }
-        .textUnderComments{
-          flex:2;
-          font-family: SourceSansPro;
-          font-size: 15px;
-          font-weight: normal;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: 1.6;
-          letter-spacing: normal;
-          color: #787878;
-          width: 425px;
-          .arrow {
-            padding-left: 10px;
-            border: none;
-            background-color: white;
-          }
+        .message {
+          padding:20px;
         }
-      }
-    }
-  }
-  .comments {
-    flex:1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    .blockComment {
-      margin-bottom: 30px;
-      width: 542px;
-      height: 196px;
-      border: solid 2px #ececec;
-      background-color: #ececec;
-      display:flex;
-      align-items: center;
-      .textComment {
-        display:flex;
-        flex-direction: column;
-        padding-left:10px;
-      }
-      .text{
-        font-family: SourceSansPro;
-        font-size: 15px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.5;
-        letter-spacing: normal;
-        color: #8c9193;
-      }
-      .author {
-        font-family: SourceSansPro;
-        font-size: 16px;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.8;
-        letter-spacing: normal;
-        color: #f77462;
-      }
-      .message {
-        padding:20px;
       }
     }
   }
@@ -153,11 +141,5 @@
   .calendarAndComments{
     flex-direction: column;
     align-items: center;
-    // .calendar{
-    //   align-self: center;
-    // }
-    // .comments{
-    //   align-self: center;
-    // }
   }
 }

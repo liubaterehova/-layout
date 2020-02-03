@@ -3,32 +3,51 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
 
-.text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  align-content: space-around;
-  height: 100%;
-}
-.rowInBlue {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  height:273px;
-}
-.circle {
-  align-self:start;
-  padding:30px;
-}
-.textAndArrow {
-  display: flex;
-  .arrow {
-    padding-left:10px;
-    align-self: center;
-  }
+    .rowInBlue {
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      height:273px; 
+      font-family: SourceSansPro;
+   
+      .circle {
+        align-self:start;
+        padding:30px;
+      }
+      .textInBlue {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        height: 100%;
+        color: #ffffff;
+        
+          .rowInBlueTextPartOne {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1.44;
+          }
+          .rowInBlueTextPartTwo {
+            font-size: 15px;
+            line-height: 1.6;
+          }
+          .textAndArrow {
+            display: flex;
+            .arrow {
+              padding-left:10px;
+              align-self: center;
+            }
+            .textArrow {
+              font-size: 16px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    
+    
+
 }
 @media (max-width: 1100px) {
   .containerWithBlue {

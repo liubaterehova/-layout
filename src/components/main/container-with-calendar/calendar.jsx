@@ -10,10 +10,12 @@ export const Calendar = ({ text1, text2, text3 }) => (
     <div className="textForData">
       <div className="headerTextCalendar">{text1}</div>
       <div className="commentsForData">{text2}</div>
-      <div className="textUnderComments">{text3}
+      <div className="textUnderComments">
+        {text3}
         <button type="button" className="arrow">
           <img src={Arrow} alt="arrow" />
         </button>
+
       </div>
     </div>
   </div>

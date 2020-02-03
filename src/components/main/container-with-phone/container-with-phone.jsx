@@ -1,8 +1,6 @@
 import React from 'react';
 import './style.scss';
 import phone from '../../png/phone.png';
-import firstPartPhoneText from '../../png/firstPartPhoneText.png';
-import secondPartPhoneText from '../../png/secondPartPhoneText.png';
 import button from '../../png/buttonMoreInfo.png';
 
 export const ContainerWithPhone = () => (
@@ -10,10 +8,15 @@ export const ContainerWithPhone = () => (
     <div className="phoneImg">
       <img src={phone} alt="phone" className="phone" />
     </div>
-    <div className="textImg">
-      <img src={firstPartPhoneText} alt="phone" className="textImg" />
-      <img src={secondPartPhoneText} alt="phone" className="textImg" />
-      <button type="button" className="button"><img src={button} alt="phone" /></button>
+    <div className="textNearPhone">
+      <div className="textNearPhoneFirstPart">Lorem ipsum dolor sit amet</div>
+      <div className="textNearPhoneSecondPart">Donec nec justo eget</div>
+      <div className="textNearPhoneThirdPart">Morbi in sem quis dui placerat ornare. Pellentesque odio<br />
+      euismod in, pharetra a, ultricies in, diam.
+      </div>
+      <button type="button" className="button">
+        <img src={button} alt="phone" />
+      </button>
     </div>
   </div>
 );

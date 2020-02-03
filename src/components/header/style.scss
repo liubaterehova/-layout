@@ -2,8 +2,13 @@
     background-color: #ffffff;
     display: flex;
     height: 99px;
-    padding-left:40px;
-    padding-right:40px;
+    padding: 0 40px;
+    align-items: center;
+
+  .plane {
+    padding-right: 20px;
+    align-self: center;
+  }
 
   .textHeader {
     display: flex;
@@ -11,15 +16,18 @@
   }
 
   .menu {
+    display: flex;
     margin-left: auto;
-  }
+    color: #787878;
+    font-weight: bold;
 
-  .plane {
-    padding-right: 20px;
-    align-self: center;
-  }
+    .active {
+      color: #6dc5dd;
+    }
 
-  .plane, .menu, .textHeader {
-    align-self: center;
+    div{
+      margin:10px 10px 10px 10px;
+    }
+    
   }
 }
