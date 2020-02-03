@@ -35,42 +35,42 @@
       width: 168px;
     }
   }
-  .end{
+  .citeInfo {
     display: flex;
-    padding: 20px;
-    padding-left:50px;
+    flex-direction: column;
+    width: 100%;
+    
+  
+
+  .footerSecondPart{
+    margin-bottom: 40px;
+    display: flex;
     align-self: flex-start;
-    width:100%;
+    width: 100%;
+    margin-left:20px;
   .allRights{
-    flex:5;
+    flex:36;
     font-family: SourceSansPro;
     font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: #ffffff;
     align-self:flex-start;
   }
-  .fb {
-    align-self:flex-end;
-    display:flex;
-    img{
+    .socialNetwork{
+      flex: 1;
+      margin-left: auto;
     padding-right:20px;
     }
-    
-  }
+  
 }
   .hr{
-    text-align:center;
     height:2px;
-    align-self:center;
     width:90%;
-    background-color: white;;
+    background-color: white;
+    align-self: center;
+    margin-bottom: 40px;
   }
 }
-
+}
 @media (max-width: 1100px) {
   .containerForFooter {
     display: none;

@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import './style.scss';
 
 export const PersonCard = ({
-  sex, photo, altForPhoto, text1, text2,
+  photo, altForPhoto, text1, text2,
 }) =>
   (
-    <div className={sex}>
+    <div className="person">
       <div className="photo">
         <img src={photo} alt={altForPhoto} />
       </div>
@@ -25,7 +25,6 @@ export const PersonCard = ({
   );
 
 PersonCard.propTypes = {
-  sex: PropTypes.node.isRequired,
   photo: PropTypes.node.isRequired,
   altForPhoto: PropTypes.node.isRequired,
   text1: PropTypes.node.isRequired,

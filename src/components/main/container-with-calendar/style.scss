@@ -7,6 +7,8 @@
     align-items: center;
     box-sizing:border-box;
   .header {
+    display: flex;
+    align-items: center;
     font-family: SourceSansPro;
     font-size: 32px;
     font-weight: bold;
@@ -15,6 +17,7 @@
     line-height: 0.9;
     letter-spacing: normal;
     color: #003d48;
+
   }
   .textUnderHeader {
     font-family: SourceSansPro;
@@ -59,6 +62,7 @@
         flex-direction: column;
         padding-left:25px;
         .headerTextCalendar{
+          flex: 2;
           font-family: SourceSansPro;
           font-size: 16px;
           font-weight: bold;
@@ -69,6 +73,7 @@
           color: #003d48;
         }
         .commentsForData{
+          flex:1;
           font-family: SourceSansPro;
           font-size: 14px;
           font-weight: normal;
@@ -77,9 +82,9 @@
           line-height: 2.06;
           letter-spacing: normal;
           color: #f77462;
-
         }
         .textUnderComments{
+          flex:2;
           font-family: SourceSansPro;
           font-size: 15px;
           font-weight: normal;
@@ -89,6 +94,11 @@
           letter-spacing: normal;
           color: #787878;
           width: 425px;
+          .arrow {
+            padding-left: 10px;
+            border: none;
+            background-color: white;
+          }
         }
       }
     }
@@ -106,10 +116,11 @@
       border: solid 2px #ececec;
       background-color: #ececec;
       display:flex;
-      align-items: flex-start;
+      align-items: center;
       .textComment {
         display:flex;
         flex-direction: column;
+        padding-left:10px;
       }
       .text{
         font-family: SourceSansPro;
@@ -117,11 +128,11 @@
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
+        line-height: 1.5;
         letter-spacing: normal;
         color: #8c9193;
       }
       .author {
-        padding-left:25px;
         font-family: SourceSansPro;
         font-size: 16px;
         font-weight: bold;

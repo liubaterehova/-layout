@@ -14,7 +14,7 @@
     flex-direction: column;
     height:100%;
   }
-  .woman {
+  .person {
     justify-content: flex-end;
     display: flex;
     height:100%;
@@ -40,10 +40,6 @@
         line-height: 1.92;
       }
     }
-  }
-  .man {
-    @extend .woman
-  
   }
   .table{
     flex: 0;
@@ -100,10 +96,21 @@
           border-width: 2px;
           border-color: rgb(236, 236, 236);
           background-color: rgb(255, 255, 255);
+          display: flex;
         }
-        li {
-          padding: 10px;
+        .arrows {
+          padding-top:20px;
+          padding-left: 10px;
         }
+        .hrForLi {
+          background-color: rgb(236, 236, 236);
+          width: 97%;
+          height: 2px; 
+        }
+       li {
+         padding-bottom: 15px;
+         list-style-type: none;
+       }
       }
       }
     }

@@ -12,14 +12,12 @@ export const ContainerWithGuys = () => (
   <div className="containerForGuys">
     <div className="people">
       <PersonCard
-        sex="woman"
         photo={woman}
         altForPhoto="woman"
         text1={textForWoman}
         text2={textForWoman2}
       />
       <PersonCard
-        sex="man"
         photo={man}
         altForPhoto="man"
         text1={textForMan}

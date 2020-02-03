@@ -23,6 +23,13 @@
   align-self:start;
   padding:30px;
 }
+.textAndArrow {
+  display: flex;
+  .arrow {
+    padding-left:10px;
+    align-self: center;
+  }
+}
 @media (max-width: 1100px) {
   .containerWithBlue {
     flex-direction: column;

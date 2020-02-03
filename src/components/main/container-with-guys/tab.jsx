@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.scss';
+import Arrows from '../../png/fiveArrows.png';
 
 export const Tab = () => (
   <div className="menuTab">
@@ -15,13 +16,20 @@ export const Tab = () => (
     </div>
     <div className="tableDownPart" />
     <div className="list">
-      <ul>
-        <li>Cras ornare tristique elit  sinto sum</li>
-        <li>Integer vitae libero ac risus egestas</li>
-        <li>Vestibulum commodo felis quis tortor</li>
-        <li>Donec quis dui at dolor tempor interd</li>
-        <li>Fusce lobortis lorem at ipsum semper</li>
-      </ul>
+      <div className="arrows"><img src={Arrows} alt="arrows" /></div>
+      <div className="ul-li">
+        <ul>
+          <li>Cras ornare tristique elit  sinto sum</li>
+          <div className="hrForLi" />
+          <li>Integer vitae libero ac risus egestas</li>
+          <div className="hrForLi" />
+          <li>Vestibulum commodo felis quis tortor</li>
+          <div className="hrForLi" />
+          <li>Donec quis dui at dolor tempor interd</li>
+          <div className="hrForLi" />
+          <li>Fusce lobortis lorem at ipsum semper</li>
+        </ul>
+      </div>
     </div>
   </div>
 );

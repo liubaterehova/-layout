@@ -1,14 +1,14 @@
 import React from 'react';
-import './style.css';
+import './style.scss';
 import Iconlogo from '../png/logo.png';
-import IconlogoSecondPart from '../png/logo2.png';
 import IconMenu from '../png/menu.png';
+import IconPlane from '../png/plane.png';
 
 export const Header = () => (
   <div className="header ">
+    <div className="plane"><img src={IconPlane} alt="plane" /></div>
     <div className="textHeader">
-      <img src={Iconlogo} alt="Logo" />;
-      <img src={IconlogoSecondPart} alt="Logo2" />;
+      <img src={Iconlogo} alt="Logo" />
     </div>
     <div className="menu">
       <img src={IconMenu} alt="Menu" />

@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './style.scss';
 import phone from '../../png/phone.png';
 import firstPartPhoneText from '../../png/firstPartPhoneText.png';
 import secondPartPhoneText from '../../png/secondPartPhoneText.png';

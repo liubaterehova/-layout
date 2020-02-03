@@ -1,0 +1,25 @@
+.header {
+    background-color: #ffffff;
+    display: flex;
+    height: 99px;
+    padding-left:40px;
+    padding-right:40px;
+
+  .textHeader {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu {
+    margin-left: auto;
+  }
+
+  .plane {
+    padding-right: 20px;
+    align-self: center;
+  }
+
+  .plane, .menu, .textHeader {
+    align-self: center;
+  }
+}
