@@ -15,9 +15,9 @@ export const ContainerWithGuys = () => (
         text2={(
           <div>
           Sed egestas, ante et vulputate volutpat, eros pede semper est,
-          vitae luctus metus<br />
-          libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida<br />
-          id, est. Sed lectus tpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar<br />
+          vitae luctus metus
+          libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida
+          id, est. Sed lectus tpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar
           nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu
           </div>
         )}
@@ -27,9 +27,9 @@ export const ContainerWithGuys = () => (
         altForPhoto="man"
         text1="Sed egestas ante et vulpu"
         text2={(
-          <div>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus<br />
-          libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida<br />
-          id, est. Sed lectus tpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar<br />
+          <div>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus
+          libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida
+          id, est. Sed lectus tpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar
           nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu
           </div>
         )}

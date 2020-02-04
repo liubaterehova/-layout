@@ -15,7 +15,7 @@ export const ContainerWithCalendar = () => (
           text1="Gravida Ultrice"
           text2="14 Comments"
           text3={(
-            <div>Suspendisse ac urna. Etiam pellentesque mauris ut lectus nunc<br /> tellus ante, mattis eget,
+            <div>Suspendisse ac urna. Etiam pellentesque mauris ut lectus nunc tellus ante, mattis eget,
       gravida vitae, ultricies atinvio
             </div>
           )}
@@ -24,7 +24,7 @@ export const ContainerWithCalendar = () => (
           text1="Tellus Mattis Pelle"
           text2="07 Comments"
           text3={(
-            <div>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euis<br />mod in, pharetra a,
+            <div>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a,
           ultricies in, diam. Sed arcu
             </div>
           )}
@@ -33,7 +33,7 @@ export const ContainerWithCalendar = () => (
           text1="Phasellus Lacina"
           text2="22 Comment"
           text3={(
-            <div>Lospendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc<br />
+            <div>Lospendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc
           tellus ante,
           mattis eget, gravida vitae, ultricies atinvio
             </div>

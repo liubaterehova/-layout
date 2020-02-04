@@ -10,8 +10,8 @@ export const Footer = () => (
       <FooterColumn
         firstRow="Vitae lin"
         secondRow={(
-          <div>hasellus ultrices<br />
-            Sed adipiscing lipsum<br />
+          <div>hasellus ultrices
+            Sed adipiscing lipsum
             Nulla sed leoniton
           </div>
         )}
@@ -20,7 +20,8 @@ export const Footer = () => (
       <FooterColumn
         firstRow="Luctrus"
         secondRow={(
-          <div>Lorem ipsum<br />Donec nec justo<br />
+          <div>Lorem ipsum
+            Donec nec justo
             Morbi in se
           </div>
         )}
@@ -29,8 +30,8 @@ export const Footer = () => (
       <FooterColumn
         firstRow="Consetu"
         secondRow={(
-          <div>Quisque a lectus<br />
-            Donec consecte<br />
+          <div>Quisque a lectus
+            Donec consecte
             Nulla sed leoniton
           </div>
         )}
@@ -39,8 +40,8 @@ export const Footer = () => (
       <FooterColumn
         firstRow="Vitae lin"
         secondRow={(
-          <div>hasellus ultrices<br />
-            Sed adipiscing lipsum<br />
+          <div>hasellus ultrices
+            Sed adipiscing lipsum
             Nulla sed leoniton
           </div>
         )}
@@ -49,7 +50,8 @@ export const Footer = () => (
       <FooterColumn
         firstRow="Luctrus"
         secondRow={(
-          <div>Lorem ipsum<br />Donec nec justo<br />
+          <div>Lorem ipsum
+            Donec nec justo
             Morbi in se
           </div>
         )}
@@ -58,8 +60,8 @@ export const Footer = () => (
       <FooterColumn
         firstRow="Consetu"
         secondRow={(
-          <div>Quisque a lectus<br />
-            Donec consecte<br />
+          <div>Quisque a lectus
+            Donec consecte
             Nulla sed leoniton
           </div>
         )}

@@ -1,32 +1,28 @@
 
 .container-with-guys {
-  height: 576px;
   background-color: #ffffff;
   display: flex;
-  align-content: center;
+  padding:40px;
   justify-content: space-evenly;
-  height: 100%;
-  padding-top:40px;
-  padding-right:20px;
   .people-in-container {
+    width:40%;
       display: flex;
       flex-direction: column;
-      height:100%;
       .person-in-container-guys {
         justify-content: flex-end;
         display: flex;
-        height:100%;
         padding-bottom:20px;
         .photo-in-container-guys {
           height: auto;
           width: 100%;
         }
       .text-near-photo-container {
+        flex:1;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
-        padding-left:30px;
+        padding-left:20px;
         .text-near-photo-first-part {
           color: #003d48;
           font-size: 1.25rem;
@@ -53,7 +49,6 @@
     }
   }
   .table-in-container {
-    flex: 0;
     .select-tab-container{
       width: 21.43rem;
       .select-tab-upper-part {
@@ -134,10 +129,10 @@
           align-self: center;
         }
         .people-in-container {
-          align-items: center;
+          width: 100%
+        }
       }
     }
-  }
   @media (max-width: 680px) {
     .container-with-guys{
       .people-in-container {
