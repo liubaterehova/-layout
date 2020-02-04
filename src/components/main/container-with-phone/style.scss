@@ -3,12 +3,10 @@
   display:flex;
   justify-content: space-evenly;
   padding-top:3.13rem;
-
   .phone-img {
     height: auto;
     width: 100%;
   }
-  
   .text-near-phone-conteiner {
     display:flex;
     flex-direction: column;
@@ -40,7 +38,8 @@
     }
   }
 }
-@media ( max-width: 680px){
+
+@media ( max-width: 680px) {
   .container-for-phone{
     .text-near-phone-conteiner {
       margin-left: 20px;
@@ -56,9 +55,9 @@
     } 
   }
 }
-@media ( max-width: 460px){
+@media ( max-width: 460px) {
   .container-for-phone{
-    .text-near-phone-conteiner{
+    .text-near-phone-conteiner {
       .text-near-phone-first-part {
         font-size: 0.8rem;
       }
@@ -75,7 +74,7 @@
         .text-in-button-phone {
           font-size: 0.6rem;
         }
-    }
+      }
     } 
   }
 }
