@@ -5,7 +5,7 @@ import { PartWithComment } from './comment';
 
 export const ContainerWithCalendar = () => (
   <div className="container-with-calendar">
-    <div className="header-in-calendar-conteiner">Vestibulum Commodo Felis</div>
+    <div className="first-header-in-calendar-conteiner">Vestibulum Commodo Felis</div>
     <div className="hr-in-calendar-conteiner" />
     <div className="second-header-in-calendar-conteiner">Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna</div>
     <div className="hr-in-calendar-conteiner" />

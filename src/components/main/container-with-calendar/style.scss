@@ -6,7 +6,8 @@
     flex-direction: column;
     align-items: center;
     box-sizing:border-box;
-  .header-in-calendar-conteiner {
+  .first-header-in-calendar-conteiner {
+    text-align: center;
     display: flex;
     align-items: center;
     font-family: SourceSansPro;
@@ -34,16 +35,13 @@
     margin-top: 30px;
     display: flex;
     flex: 1;
-    width: 100%;
-    align-items: center;
-  
     .calendar-part-in-calendar-conteiner {
       display: flex;
       flex: 1;
       flex-direction: column;
       justify-content: space-between;
+      align-items: flex-end;
       .card-with-calendar {
-        align-self: flex-end;
         width:75%;
         display: flex;
         flex-direction: row;
@@ -135,10 +133,10 @@
       flex-direction: column;
       align-items: center;
       .calendar-part-in-calendar-conteiner {
-        align-self: flex-start;
+        align-items: center;
           .card-with-calendar {
-          border: 2px solid red;
-          align-items: flex-start;
+          width: 90%;
+          
           }
       }
       .comments-part-in-calendar-conteiner {
@@ -152,7 +150,7 @@
 }
 @media (max-width: 600px) {
   .container-with-calendar {
-    .header-in-calendar-conteiner {
+    .first-header-in-calendar-conteiner {
       font-size: 1.6rem;
       line-height: 0.8;
     }
@@ -163,6 +161,7 @@
     .calendar-and-comments-in-calendar-container {
       .calendar-part-in-calendar-conteiner {
         .card-with-calendar {
+          width: 100%;
           margin-bottom:10px;
           .text-in-card-conteiner {
             padding-left:15px;
@@ -184,7 +183,7 @@
       .comments-part-in-calendar-conteiner {
         width: 100%;
         .card-with-comments {
-          width:90%;
+          width:100%;
           .main-text-in-card-with-comment {
             font-size: 0.85rem;
             line-height: 1.2;

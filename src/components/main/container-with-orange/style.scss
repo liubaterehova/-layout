@@ -5,8 +5,8 @@
   align-items: center;
   box-sizing:border-box;
   .text-in-orange-container {
-    padding: 40px;
-    width: 100%;
+    padding: 30px;
+    width: 40%;
     font-family: SourceSansPro;
     font-size: 2rem;
     font-weight: bold;
@@ -25,6 +25,7 @@
 @media (max-width: 600px) {
   .container-with-orange-bg {
     .text-in-orange-container {
+      padding: 10px;
       font-size: 1.2rem;
       line-height: 0.9;
       .text-under-header-in-orange-container {

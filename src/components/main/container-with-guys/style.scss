@@ -2,35 +2,37 @@
 .container-with-guys {
   background-color: #ffffff;
   display: flex;
-  padding:40px;
+  padding:20px;
   justify-content: space-evenly;
   .people-in-container {
-    width:40%;
       display: flex;
       flex-direction: column;
       .person-in-container-guys {
         justify-content: flex-end;
         display: flex;
         padding-bottom:20px;
-        .photo-in-container-guys {
-          height: auto;
-          width: 100%;
+        .person-photo-in-container-guys{
+          flex: 1 0 85px;
+          .photo-in-container-guys {
+            height: auto;
+            width: 100%;
+          }
         }
       .text-near-photo-container {
-        flex:1;
+        flex: 5;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
         padding-left:20px;
-        .text-near-photo-first-part {
+        .text-near-photo-header {
           color: #003d48;
           font-size: 1.25rem;
           font-weight: bold;
           line-height: 1.44;
         }
-        .text-near-photo-second-part {
-          font-size: 0.94rem;
+        .text-near-photo-main-part {
+          font-size: 1rem;
           line-height: 1.6;
           color: #8c9193;
         }
@@ -138,11 +140,11 @@
       .people-in-container {
         .person-in-container-guys {
           .text-near-photo-container {
-            .text-near-photo-first-part {
+            .text-near-photo-header {
               font-size: 1rem;
               line-height: 1.20;
             }
-            .text-near-photo-second-part {
+            .text-near-photo-main-part {
               font-size: 0.8rem;
               line-height: 1.2;
             }
@@ -168,11 +170,11 @@
       .people-in-conteine {
         .person-in-container-guys {
           .text-near-photo-container {
-            .text-near-photo-first-part {
+            .text-near-photo-header {
               font-size: 0.8rem;
               line-height: 1.20;
             }
-            .text-near-photo-second-part {
+            .text-near-photo-main-part {
               font-size: 0.6rem;
               line-height: 1.2;
             }
