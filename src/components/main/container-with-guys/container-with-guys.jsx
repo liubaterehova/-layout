@@ -7,7 +7,7 @@ import { SelectTab } from './select-tab';
 
 export const ContainerWithGuys = () => (
   <div className="container-with-guys">
-    <div className="people-in-conteiner">
+    <div className="people-in-container">
       <PersonCard
         photo={woman}
         altForPhoto="woman"
@@ -36,7 +36,7 @@ export const ContainerWithGuys = () => (
       />
     </div>
 
-    <div className="table-in-conteiner">
+    <div className="table-in-container">
       <SelectTab />
     </div>
   </div>

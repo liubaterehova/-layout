@@ -8,39 +8,39 @@
   height: 100%;
   padding-top:40px;
   padding-right:20px;
-  .people-in-conteiner {
+  .people-in-container {
       display: flex;
       flex-direction: column;
       height:100%;
-      .person-in-conteiner-guys {
+      .person-in-container-guys {
         justify-content: flex-end;
         display: flex;
         height:100%;
         padding-bottom:20px;
-        .photo-in-conteiner-guys {
+        .photo-in-container-guys {
           height: auto;
           width: 100%;
         }
       
-      .text-near-photo-conteiner {
+      .text-near-photo-container {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
         padding-left:30px;
-        .tex-near-photo-first-part {
+        .text-near-photo-first-part {
           color: #003d48;
           font-size: 1.25rem;
           font-weight: bold;
           line-height: 1.44;
         }
-        .tex-near-photo-second-part {
+        .text-near-photo-second-part {
           font-size: 0.94rem;
           line-height: 1.6;
           color: #8c9193;
         }
   
-        .button {
+        .button-for-guys-container {
           width: 4.56rem;
           height: 2.56rem;
           font-size: 0.94rem;
@@ -54,10 +54,10 @@
       }
     }
   }
-  .table-in-conteiner {
+  .table-in-container {
     flex: 0;
 
-    .select-tab-conteiner{
+    .select-tab-container{
       width: 21.43rem;
       .select-tab-upper-part {
         .tab-active {
@@ -82,7 +82,7 @@
           margin-left: 6px;
           }
         }
-        .text-in-selected-tab-conteiner{
+        .text-in-selected-tab-container{
           background-color: #003d48;
           padding: 20px;
           
@@ -132,29 +132,28 @@
     @media (max-width: 1100px) {
       .container-with-guys{
         flex-direction: column;
-        .table-in-conteiner  {
+        .table-in-container  {
           align-self: center;
         }
-        .people-in-conteiner {
+        .people-in-container {
           align-items: center;
       }
     }
   }
   @media (max-width: 680px) {
     .container-with-guys{
-      .people-in-conteiner {
-        .person {
-          .text-near-photo-conteiner{
-            .tex-near-photo-first-part {
+      .people-in-container {
+        .person-in-container-guys {
+          .text-near-photo-container{
+            .text-near-photo-first-part {
               font-size: 1rem;
               line-height: 1.20;
             }
-            .tex-near-photo-second-part {
+            .text-near-photo-second-part {
               font-size: 0.8rem;
               line-height: 1.2;
             }
-      
-            .button {
+            .button-for-guys-container {
               width: 3rem;
               height: 2rem;
               font-size: 0.6rem;
@@ -174,13 +173,13 @@
   @media (max-width: 480px) {
     .container-with-guys{
       .people-in-conteine {
-        .person {
-          .text-near-photo-conteiner{
-            .tex-near-photo-first-part {
+        .person-in-container-guys {
+          .text-near-photo-container{
+            .text-near-photo-first-part {
               font-size: 0.8rem;
               line-height: 1.20;
             }
-            .tex-near-photo-second-part {
+            .text-near-photo-second-part {
               font-size: 0.6rem;
               line-height: 1.2;
             }
@@ -197,11 +196,11 @@
           }
         } 
       }
-      .table-in-conteiner {
-        .select-tab-conteiner{
+      .table-in-container {
+        .select-tab-container{
           width: 18rem;
           .select-tab-upper-part {
-            .tab {
+            .tab-active {
               border-radius:5px 5px 0 0;
               width: 2.7rem;
               height: 1.8rem;
@@ -210,7 +209,7 @@
               line-height: 1.4;
               font-weight: bold;
             }
-            .text-in-selected-tab-conteiner{
+            .text-in-selected-tab-container{
               .header-in-selected-tab {
                 font-family: "SourceSansPro";
                 font-size: 0.6rem;
