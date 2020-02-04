@@ -10,18 +10,17 @@
     display: flex;
     align-items: center;
     font-family: SourceSansPro;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 0.9;
     letter-spacing: normal;
     color: #003d48;
-
   }
   .textUnderHeader {
     font-family: SourceSansPro;
-    font-size: 22px;
+    font-size: 1.4rem;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -62,7 +61,7 @@
           .headerTextCalendar{
             flex: 2;
             font-family: SourceSansPro;
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: bold;
             line-height: 1.8;
             color: #003d48;
@@ -70,17 +69,16 @@
           .commentsForData{
             flex:1;
             font-family: SourceSansPro;
-            font-size: 14px;
+            font-size: 0.88rem;
             line-height: 2.06;
             color: #f77462;
           }
           .textUnderComments{
             flex:2;
             font-family: SourceSansPro;
-            font-size: 15px;
+            font-size: 0.94rem;
             line-height: 1.6;
             color: #787878;
-           
             .arrow {
               padding-left: 10px;
               border: none;
@@ -111,7 +109,7 @@
         }
         .text{
           font-family: SourceSansPro;
-          font-size: 15px;
+          font-size: 0.94rem;
           font-weight: normal;
           font-stretch: normal;
           font-style: normal;
@@ -121,7 +119,7 @@
         }
         .author {
           font-family: SourceSansPro;
-          font-size: 16px;
+          font-size: 1rem;
           font-weight: bold;
           font-stretch: normal;
           font-style: normal;
@@ -131,6 +129,10 @@
         }
         .message {
           padding:20px;
+          .circle-in-comment {
+            width: 100%;
+            height: auto;
+          }
         }
       }
     }
@@ -138,8 +140,115 @@
 }
 
 @media (max-width: 1100px) {
-  .calendarAndComments{
-    flex-direction: column;
-    align-items: center;
+  .containerWithCalendar {
+    .calendarAndComments{
+      flex-direction: column;
+      align-items: center;
+      .comments {
+        width: 100%;
+        .blockComment {
+          width:90%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .containerWithCalendar {
+    .header {
+      font-size: 1.6rem;
+      line-height: 0.8;
+    }
+    .textUnderHeader {
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+    .calendarAndComments {
+      .calendar{
+        .row{
+          margin-bottom:10px;
+          .textForData{
+            padding-left:15px;
+            .headerTextCalendar{
+              font-size: 0.8rem;
+              line-height: 1.4;
+            }
+            .commentsForData{
+              font-size: 0.6rem;
+              line-height: 1.06;
+            }
+            .textUnderComments{
+              font-size: 0.74rem;
+              line-height: 1.4;
+              .arrow {
+              }
+            }
+          }
+        }
+      }
+      .comments {
+        width: 100%;
+        .blockComment {
+          width:90%;
+          .text {
+            font-size: 0.85rem;
+            line-height: 1.2;
+          }
+          .author {
+            font-size: 0.8rem;
+            line-height: 1.4;
+          }
+          .message {
+            padding:20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 480px) {
+  .containerWithCalendar {
+    .calendarAndComments {
+      .calendar{
+        .row{
+          margin-bottom:10px;
+          .textForData{
+            padding-left:15px;
+            .headerTextCalendar{
+              font-size: 0.8rem;
+              line-height: 1.4;
+            }
+            .commentsForData{
+              font-size: 0.6rem;
+              line-height: 1.06;
+            }
+            .textUnderComments{
+              font-size: 0.74rem;
+              line-height: 1.4;
+              .arrow {
+              }
+            }
+          }
+        }
+      }
+      .comments {
+        .blockComment {
+          .text {
+            font-size: 0.6rem;
+            line-height: 1.4;
+          }
+          .author {
+            font-size: 0.6rem;
+            line-height: 1.4;
+          }
+          .message {
+            padding:10px;
+          }
+        }
+      }
+    }
   }
 }

@@ -15,7 +15,7 @@
     }
     .headerInFooter{
       font-family: SourceSansPro;
-      font-size: 20px;
+      font-size: 1.25rem;
       font-weight: bold;
       letter-spacing: 0.8px;
       color: #ffffff;
@@ -45,7 +45,7 @@
   .allRights{
     flex:36;
     font-family: SourceSansPro;
-    font-size: 15px;
+    font-size: 0.88rem;
     color: #ffffff;
     align-self:flex-start;
   }
@@ -70,3 +70,35 @@
     flex-wrap: wrap;
   }
 };
+
+@media (max-width: 600px) {
+  .containerForFooter {
+    .upperPart {
+      padding: 10px 10px;
+      .headerInFooter{
+        font-size: 1rem;
+        letter-spacing: 0.4px;
+      }
+      .textAfterHeader{
+        font-size: 14px;
+        line-height: 1.94;
+        letter-spacing: 0.56px;
+        color: #ffffff;
+        width: 168px;
+      }
+    }
+      .citeInfo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      .footerSecondPart{
+      .allRights{
+        font-size: 0.6rem;
+      }
+        .socialNetwork{
+        padding-right:20px;
+        }
+      }
+    }
+  }
+}

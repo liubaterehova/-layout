@@ -14,9 +14,8 @@ export const Tab = () => (
         <div className="simalesText">Simasellus ultrices nulla quis nibh Quisque a lectus Donec consectutuer ligula vulputate sem tristique sem tris</div>
       </div>
     </div>
-    <div className="tableDownPart" />
     <div className="list">
-      <div className="arrows"><img src={Arrows} alt="arrows" /></div>
+      <div className="arrows"><img src={Arrows} alt="arrows" className="image-arrow" /></div>
       <div>
         <ul>
           <li>Cras ornare tristique elit  sinto sum</li>

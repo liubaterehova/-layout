@@ -5,7 +5,7 @@ import { ContainerWithGuys } from '../container-with-guys/container-with-guys';
 import { ContainerWithOrange } from '../container-with-orange/container-with-orange';
 import { ContainerWithCalendar } from '../container-with-calendar/container-with-calendar';
 
-import './style.css';
+import './style.scss';
 
 export const Main = () => (
   <div className="containerForMain">

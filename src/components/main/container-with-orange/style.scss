@@ -1,16 +1,15 @@
 .containerWithOrange {
   background-color: #f77462;
-  height: 209px;
   display:flex;
   justify-content: center;
   align-items: center;
   box-sizing:border-box;
 
   .textContainer {
-
-    width: 683px;
+    padding: 40px;
+    width: 100%;
     font-family: SourceSansPro;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -20,9 +19,23 @@
     color: #ffffff;
     .textUnderHeader {
       padding: 20px;
-      font-size: 18px;
+      font-size: 1.13rem;
       font-weight: 300;
       line-height: 1.6;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .containerWithOrange {
+    .textContainer {
+      font-size: 1.2rem;
+      line-height: 0.9;
+      .textUnderHeader {
+        padding: 10px;
+        font-size: 0.8rem;
+        line-height: 1.2;
+      }
     }
   }
 }

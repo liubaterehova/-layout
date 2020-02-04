@@ -8,7 +8,7 @@ export const PersonCard = ({
   (
     <div className="person">
       <div>
-        <img src={photo} alt={altForPhoto} />
+        <img src={photo} alt={altForPhoto} className="photo-in-guys" />
       </div>
       <div className="textNearPhoto">
         <div className="personText">{text1}</div>

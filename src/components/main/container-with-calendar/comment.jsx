@@ -9,7 +9,7 @@ export const Comment = ({ text1, author }) => (
       <div className="text">{text1}</div>
       <div className="author">{author}</div>
     </div>
-    <div className="message"><img src={circleMessage} alt="msg" /></div>
+    <div className="message"><img src={circleMessage} alt="msg" className="circle-in-comment" /></div>
   </div>
 );
 

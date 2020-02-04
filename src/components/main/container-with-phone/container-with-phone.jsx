@@ -15,7 +15,7 @@ export const ContainerWithPhone = () => (
       euismod in, pharetra a, ultricies in, diam.
       </div>
       <button type="button" className="button">
-        <img src={button} alt="phone" />
+        <span className="text-in-button-phone">MORE INFO</span>
       </button>
     </div>
   </div>
