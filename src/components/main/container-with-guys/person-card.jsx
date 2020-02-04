@@ -6,13 +6,13 @@ export const PersonCard = ({
   photo, altForPhoto, text1, text2,
 }) =>
   (
-    <div className="person">
+    <div className="person-in-conteiner-guys">
       <div>
-        <img src={photo} alt={altForPhoto} className="photo-in-guys" />
+        <img src={photo} alt={altForPhoto} className="photo-in-conteiner-guys" />
       </div>
-      <div className="textNearPhoto">
-        <div className="personText">{text1}</div>
-        <div className="personText2">{text2}</div>
+      <div className="text-near-photo-conteiner">
+        <div className="tex-near-photo-first-part">{text1}</div>
+        <div className="tex-near-photo-second-part">{text2}</div>
         <div>
           <input type="button" className="button" value="More" />
         </div>

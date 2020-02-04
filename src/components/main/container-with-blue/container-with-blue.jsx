@@ -3,7 +3,7 @@ import './style.scss';
 import { BlueColumn } from './blue-column';
 
 export const ContainerWithBlue = () => (
-  <div className="containerWithBlue">
+  <div className="container-with-blue">
     <BlueColumn
       text1="Ausce Cellentes"
       text2={(

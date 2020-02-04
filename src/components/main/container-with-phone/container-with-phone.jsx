@@ -4,14 +4,14 @@ import phone from '../../png/phone.png';
 import button from '../../png/buttonMoreInfo.png';
 
 export const ContainerWithPhone = () => (
-  <div className="containerForPhone">
-    <div className="phoneImg">
-      <img src={phone} alt="phone" className="phone" />
+  <div className="container-for-phone">
+    <div>
+      <img src={phone} alt="phone" className="phone-img" />
     </div>
-    <div className="textNearPhone">
-      <div className="textNearPhoneFirstPart">Lorem ipsum dolor sit amet</div>
-      <div className="textNearPhoneSecondPart">Donec nec justo eget</div>
-      <div className="textNearPhoneThirdPart">Morbi in sem quis dui placerat ornare. Pellentesque odio<br />
+    <div className="text-near-phone-conteiner">
+      <div className="text-near-phone-first-part">Lorem ipsum dolor sit amet</div>
+      <div className="text-near-phone-second-part">Donec nec justo eget</div>
+      <div className="text-near-phone-third-part">Morbi in sem quis dui placerat ornare. Pellentesque odio<br />
       euismod in, pharetra a, ultricies in, diam.
       </div>
       <button type="button" className="button">

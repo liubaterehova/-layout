@@ -1,21 +1,20 @@
-.containerWithBlue {
+.container-with-blue {
   background-color: #6dc5dd;
   display: flex;
   justify-content: space-around;
   align-items: center;
 
-    .rowInBlue {
+    .column-in-blue-conteiner {
       display: flex;
       flex: 1;
       flex-direction: row;
       height:17rem; 
-      font-family: SourceSansPro;
-   
+      font-family: SourceSansPro; 
       .circle {
         align-self:start;
         padding:30px;
       }
-      .textInBlue {
+      .text-in-blue-conteiner {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -23,65 +22,63 @@
         height: 100%;
         color: #ffffff;
         
-          .rowInBlueTextPartOne {
+          .header-in-blue-column{
             font-size: 1.25rem;
             font-weight: bold;
             line-height: 1.44;
           }
-          .rowInBlueTextPartTwo {
+          .main-text-in-blue-column {
             font-size: 0.94rem;
             line-height: 1.6;
           }
-          .textAndArrow {
+          .text-and-arrow-in-blue-column {
             display: flex;
             .arrow {
               padding-left:10px;
               align-self: center;
             }
-            .textArrow {
+            .text-before-arrow {
               font-size: 1rem;
               font-weight: bold;
             }
           }
         }
       }
-    
-    
-
 }
+
 @media (max-width: 1100px) {
-  .containerWithBlue {
+  .container-with-blue {
     flex-direction: column;
-    .rowInBlue {
+    .column-in-blue-conteiner {
       flex: none;
     }
   }
 }
 @media (max-width: 600px) {
-  .containerWithBlue {
-    .rowInBlue {
+  .container-with-blue {
+    .column-in-blue-conteiner {
       display: flex;
       flex: 1;
       flex-direction: row;
-      .textInBlue {
+      .text-in-blue-conteiner {
         padding-top:30px;
         justify-content: center;
-          .rowInBlueTextPartOne {
+          .header-in-blue-column{
             font-size: 0.8rem;
             font-weight: bold;
             line-height: 1.10;
           }
-          .rowInBlueTextPartTwo {
+          .main-text-in-blue-column {
             font-size: 0.6rem;
             line-height: 1.2;
           }
-          .textAndArrow {
+          .text-and-arrow-in-blue-column {
             display: flex;
             .arrow {
               padding-left:10px;
               align-self: center;
             }
-            .textArrow {
+            .text-before-arrow {
               font-size: 0.6rem;
               font-weight: bold;
             }

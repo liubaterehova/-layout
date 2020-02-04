@@ -1,11 +1,11 @@
-.containerWithOrange {
+.container-with-orange-bg {
   background-color: #f77462;
   display:flex;
   justify-content: center;
   align-items: center;
   box-sizing:border-box;
 
-  .textContainer {
+  .text-in-orange-container {
     padding: 40px;
     width: 100%;
     font-family: SourceSansPro;
@@ -17,7 +17,7 @@
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
-    .textUnderHeader {
+    .text-under-header-in-orange-container {
       padding: 20px;
       font-size: 1.13rem;
       font-weight: 300;
@@ -27,11 +27,11 @@
 }
 
 @media (max-width: 600px) {
-  .containerWithOrange {
-    .textContainer {
+  .container-with-orange-bg {
+    .text-in-orange-container {
       font-size: 1.2rem;
       line-height: 0.9;
-      .textUnderHeader {
+      .text-under-header-in-orange-container {
         padding: 10px;
         font-size: 0.8rem;
         line-height: 1.2;

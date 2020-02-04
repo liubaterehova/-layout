@@ -1,4 +1,4 @@
-.containerWithCalendar {
+.container-with-calendar {
     background-color: #ffffff;
     width:100%;
     height: 100%;
@@ -6,19 +6,17 @@
     flex-direction: column;
     align-items: center;
     box-sizing:border-box;
-  .header {
+  .header-in-calendar-conteiner {
     display: flex;
     align-items: center;
     font-family: SourceSansPro;
+    padding: 40px;
     font-size: 2rem;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 0.9;
-    letter-spacing: normal;
     color: #003d48;
   }
-  .textUnderHeader {
+  .second-header-in-calendar-conteiner {
     font-family: SourceSansPro;
     font-size: 1.4rem;
     font-weight: 300;
@@ -29,36 +27,36 @@
     text-align: center;
     color: #6dc5dd;
   }
-  .hr {
+  .hr-in-calendar-conteiner {
     background-color: rgb(236, 236, 236);
     margin:10px;
     width: 97%;
     height: 2px; 
   }
-  .calendarAndComments {
+  .calendar-and-comments-in-calendar-container {
     margin-top: 30px;
     display: flex;
     flex: 1;
     width: 100%;
     align-items: center;
   
-    .calendar{
+    .calendar-part-in-calendar-conteiner{
       display: flex;
       flex: 1;
       flex-direction: column;
       justify-content: space-between;
-      .row{
+      .card-with-calendar{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
         height: 100%;
         margin-bottom:10px;
-        .textForData{
+        .text-in-card-conteiner{
           display:flex;
           flex-direction: column;
           padding-left:25px;
-          .headerTextCalendar{
+          .header-in-card{
             flex: 2;
             font-family: SourceSansPro;
             font-size: 1rem;
@@ -66,20 +64,20 @@
             line-height: 1.8;
             color: #003d48;
           }
-          .commentsForData{
+          .number-of-comments-in-card{
             flex:1;
             font-family: SourceSansPro;
             font-size: 0.88rem;
             line-height: 2.06;
             color: #f77462;
           }
-          .textUnderComments{
+          .main-text-in-card{
             flex:2;
             font-family: SourceSansPro;
             font-size: 0.94rem;
             line-height: 1.6;
             color: #787878;
-            .arrow {
+            .button-image-arrow-in-card {
               padding-left: 10px;
               border: none;
               background-color: white;
@@ -88,48 +86,45 @@
         }
       }
     }
-    .comments {
+    .comments-part-in-calendar-conteiner {
       width: 70%;
       flex:1;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      .blockComment {
+      .card-with-comments {
         width:80%;
         margin-bottom: 30px;
         border: solid 2px #ececec;
         background-color: #ececec;
         display:flex;
         align-items: center;
-        .textComment {
+        .text-in-card-with-comment {
           display:flex;
           flex-direction: column;
-          padding-left:10px;
+          padding-left: 10px;
+        
+          .main-text-in-card-with-comment{
+            font-family: SourceSansPro;
+            font-size: 0.94rem;
+            line-height: 1.5;
+            color: #8c9193;
+          }
+          .author-in-card-with-comment {
+            font-family: SourceSansPro;
+            font-size: 1rem;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.8;
+            letter-spacing: normal;
+            color: #f77462;
+          }
         }
-        .text{
-          font-family: SourceSansPro;
-          font-size: 0.94rem;
-          font-weight: normal;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: 1.5;
-          letter-spacing: normal;
-          color: #8c9193;
-        }
-        .author {
-          font-family: SourceSansPro;
-          font-size: 1rem;
-          font-weight: bold;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: 1.8;
-          letter-spacing: normal;
-          color: #f77462;
-        }
-        .message {
+        .message-image-in-card-with-comment {
           padding:20px;
-          .circle-in-comment {
+          .img-circle-in-comment-card {
             width: 100%;
             height: auto;
           }
@@ -140,13 +135,13 @@
 }
 
 @media (max-width: 1100px) {
-  .containerWithCalendar {
-    .calendarAndComments{
+  .container-with-calendar {
+    .calendar-and-comments-in-calendar-container{
       flex-direction: column;
       align-items: center;
-      .comments {
+      .comments-part-in-calendar-conteiner {
         width: 100%;
-        .blockComment {
+        .card-with-comments {
           width:90%;
         }
       }
@@ -155,51 +150,49 @@
 }
 
 @media (max-width: 600px) {
-  .containerWithCalendar {
-    .header {
+  .container-with-calendar {
+    .header-in-calendar-conteiner {
       font-size: 1.6rem;
       line-height: 0.8;
     }
-    .textUnderHeader {
+    .second-header-in-calendar-conteiner {
       font-size: 1rem;
       line-height: 1.2;
     }
-    .calendarAndComments {
-      .calendar{
-        .row{
+    .calendar-and-comments-in-calendar-container {
+      .calendar-part-in-calendar-conteiner{
+        .card-with-calendar{
           margin-bottom:10px;
-          .textForData{
+          .text-in-card-conteiner{
             padding-left:15px;
-            .headerTextCalendar{
+            .header-in-card{
               font-size: 0.8rem;
               line-height: 1.4;
             }
-            .commentsForData{
+            .number-of-comments-in-card{
               font-size: 0.6rem;
               line-height: 1.06;
             }
-            .textUnderComments{
+            .main-text-in-card{
               font-size: 0.74rem;
               line-height: 1.4;
-              .arrow {
-              }
             }
           }
         }
       }
-      .comments {
+      .comments-part-in-calendar-conteiner {
         width: 100%;
-        .blockComment {
+        .card-with-comments {
           width:90%;
-          .text {
+          .main-text-in-card-with-comment {
             font-size: 0.85rem;
             line-height: 1.2;
           }
-          .author {
+          .author-in-card-with-comment {
             font-size: 0.8rem;
             line-height: 1.4;
           }
-          .message {
+          .message-image-in-card-with-comment {
             padding:20px;
           }
         }
@@ -210,41 +203,39 @@
 
 
 @media (max-width: 480px) {
-  .containerWithCalendar {
-    .calendarAndComments {
-      .calendar{
-        .row{
+  .container-with-calendar {
+    .calendar-and-comments-in-calendar-container {
+      .calendar-part-in-calendar-conteiner {
+        .card-with-calendar{
           margin-bottom:10px;
-          .textForData{
+          .text-in-card-conteiner{
             padding-left:15px;
-            .headerTextCalendar{
+            .header-in-card{
               font-size: 0.8rem;
               line-height: 1.4;
             }
-            .commentsForData{
+            .number-of-comments-in-card{
               font-size: 0.6rem;
               line-height: 1.06;
             }
-            .textUnderComments{
+            .main-text-in-card{
               font-size: 0.74rem;
               line-height: 1.4;
-              .arrow {
-              }
             }
           }
         }
       }
-      .comments {
-        .blockComment {
-          .text {
+      .comments-part-in-calendar-conteiner {
+        .card-with-comments {
+          .main-text-in-card-with-comment{
             font-size: 0.6rem;
             line-height: 1.4;
           }
-          .author {
+          .author-in-card-with-comment {
             font-size: 0.6rem;
             line-height: 1.4;
           }
-          .message {
+          .message-image-in-card-with-comment {
             padding:10px;
           }
         }

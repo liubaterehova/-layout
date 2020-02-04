@@ -3,11 +3,11 @@ import './style.scss';
 import woman from '../../png/tetka.png';
 import man from '../../png/mushik.png';
 import { PersonCard } from './person-card';
-import { Tab } from './tab';
+import { SelectTab } from './select-tab';
 
 export const ContainerWithGuys = () => (
-  <div className="containerForGuys">
-    <div className="people">
+  <div className="container-with-guys">
+    <div className="people-in-conteiner">
       <PersonCard
         photo={woman}
         altForPhoto="woman"
@@ -36,8 +36,8 @@ export const ContainerWithGuys = () => (
       />
     </div>
 
-    <div className="table">
-      <Tab />
+    <div className="table-in-conteiner">
+      <SelectTab />
     </div>
   </div>
 );

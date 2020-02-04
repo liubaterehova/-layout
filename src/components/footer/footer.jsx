@@ -4,8 +4,8 @@ import { FooterColumn } from './footer-column';
 import { CiteInfo } from './footer-cite-info';
 
 export const Footer = () => (
-  <div className="containerForFooter">
-    <div className="upperPart">
+  <div className="container-for-footer">
+    <div className="upper-part-footer-container">
 
       <FooterColumn
         firstRow="Vitae lin"

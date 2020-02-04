@@ -1,5 +1,5 @@
 
-.containerForGuys {
+.container-with-guys {
   height: 576px;
   background-color: #ffffff;
   display: flex;
@@ -8,34 +8,33 @@
   height: 100%;
   padding-top:40px;
   padding-right:20px;
-  .people {
+  .people-in-conteiner {
       display: flex;
       flex-direction: column;
       height:100%;
-    
-      .person {
+      .person-in-conteiner-guys {
         justify-content: flex-end;
         display: flex;
         height:100%;
         padding-bottom:20px;
-        .photo-in-guys {
+        .photo-in-conteiner-guys {
           height: auto;
           width: 100%;
         }
       
-      .textNearPhoto {
+      .text-near-photo-conteiner {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
         padding-left:30px;
-        .personText {
+        .tex-near-photo-first-part {
           color: #003d48;
           font-size: 1.25rem;
           font-weight: bold;
           line-height: 1.44;
         }
-        .personText2 {
+        .tex-near-photo-second-part {
           font-size: 0.94rem;
           line-height: 1.6;
           color: #8c9193;
@@ -55,13 +54,13 @@
       }
     }
   }
-  .table{
+  .table-in-conteiner {
     flex: 0;
 
-    .menuTab{
+    .select-tab-conteiner{
       width: 21.43rem;
-      .tableUpperPart {
-        .tab {
+      .select-tab-upper-part {
+        .tab-active {
           border-radius:5px 5px 0 0;
           border-style: solid;
           border-width: 2px;
@@ -71,33 +70,30 @@
           font-family: "SourceSansPro";
           line-height: 1.8;
           font-weight: bold;
-        }
-        .active {
           background-color: rgb(0, 61, 72);
+          color: rgb(247, 116, 98);
           border:none;
         }
-        .nonActive {
+        .tab-no-active {
+          @extend .tab-active;
           background-color: white;
-        }
-        
-        .tabActive {
-          color: rgb(247, 116, 98);
-        }
-        .tabNonActive {
           color: rgb(120, 120, 120);
+          border: 1px solid rgb(120, 120, 120);
+          margin-left: 6px;
+          }
         }
-        .tabletext{
+        .text-in-selected-tab-conteiner{
           background-color: #003d48;
           padding: 20px;
           
-          .sedeginText {
+          .header-in-selected-tab {
             font-family: "SourceSansPro";
             color: rgb(109, 197, 221);
             font-weight: bold;
             line-height: 1.44;
             text-align: left;
           }
-          .simalesText {
+          .main-text-in-selected-tab {
             font-size: 0.94rem;
             font-family: "SourceSansPro";
             color: white;
@@ -106,14 +102,14 @@
           }
         }
       }
-        .list {
+        .select-tab-down-part {
             border-style: solid;
             border-width: 2px;
             border-color: rgb(236, 236, 236);
             background-color: rgb(255, 255, 255);
             display: flex;
           
-            .arrows {
+            .arrows-imgs-in-down-part {
               padding-top:20px;
               padding-left: 10px;
               .image-arrow {
@@ -128,33 +124,32 @@
             }
             li {
               padding-bottom: 0.94rem;
-              list-style-type: none;
+              list-style-type: none; 
             }
           }
         }
       }
-    }
     @media (max-width: 1100px) {
-      .containerForGuys{
+      .container-with-guys{
         flex-direction: column;
-        .table {
+        .table-in-conteiner  {
           align-self: center;
         }
-        .people {
+        .people-in-conteiner {
           align-items: center;
       }
     }
   }
   @media (max-width: 680px) {
-    .containerForGuys{
-      .people {
+    .container-with-guys{
+      .people-in-conteiner {
         .person {
-          .textNearPhoto{
-            .personText {
+          .text-near-photo-conteiner{
+            .tex-near-photo-first-part {
               font-size: 1rem;
               line-height: 1.20;
             }
-            .personText2 {
+            .tex-near-photo-second-part {
               font-size: 0.8rem;
               line-height: 1.2;
             }
@@ -177,15 +172,15 @@
     
   }
   @media (max-width: 480px) {
-    .containerForGuys{
-      .people {
+    .container-with-guys{
+      .people-in-conteine {
         .person {
-          .textNearPhoto{
-            .personText {
+          .text-near-photo-conteiner{
+            .tex-near-photo-first-part {
               font-size: 0.8rem;
               line-height: 1.20;
             }
-            .personText2 {
+            .tex-near-photo-second-part {
               font-size: 0.6rem;
               line-height: 1.2;
             }
@@ -202,10 +197,10 @@
           }
         } 
       }
-      .table{
-        .menuTab{
+      .table-in-conteiner {
+        .select-tab-conteiner{
           width: 18rem;
-          .tableUpperPart {
+          .select-tab-upper-part {
             .tab {
               border-radius:5px 5px 0 0;
               width: 2.7rem;
@@ -215,8 +210,8 @@
               line-height: 1.4;
               font-weight: bold;
             }
-            .tabletext{
-              .sedeginText {
+            .text-in-selected-tab-conteiner{
+              .header-in-selected-tab {
                 font-family: "SourceSansPro";
                 font-size: 0.6rem;
                 color: rgb(109, 197, 221);
@@ -224,7 +219,7 @@
                 line-height: 1.24;
                 text-align: left;
               }
-              .simalesText {
+              .main-text-in-selected-tab {
                 font-size: 0.54rem;
                 font-family: "SourceSansPro";
                 color: white;
@@ -233,8 +228,8 @@
               }
             }
           }
-          .list {
-            .arrows {
+          .select-tab-down-part {
+            .arrows-imgs-in-down-part {
               display: none;
             }
             .hrForLi {
@@ -244,7 +239,7 @@
             li {
               font-size:0.7rem;
               padding-bottom: 0.6rem;
-              list-style-type: none;
+              list-style-type: none; 
             }
           }
         }

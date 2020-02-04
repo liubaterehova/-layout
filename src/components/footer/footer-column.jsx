@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import './style.scss';
 
 export const FooterColumn = ({ firstRow, secondRow }) => (
-  <div className="rows">
-    <div className="headerInFooter">{firstRow}</div>
-    <div className="textAfterHeader">{secondRow}</div>
+  <div className="column-in-footer">
+    <div className="header-in-footer-column">{firstRow}</div>
+    <div className="main-text-in-footer-column">{secondRow}</div>
   </div>
 );
 

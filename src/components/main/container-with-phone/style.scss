@@ -1,31 +1,29 @@
-.containerForPhone {
+.container-for-phone {
   background-image: linear-gradient(to top, #ffffff, #e7e7e7);
   display:flex;
   justify-content: space-evenly;
   padding-top:3.13rem;
 
-  .phoneImg {
-    align-self:flex-end;
-    .phone {
-      height: auto;
-      width: 100%;
-    }
+  .phone-img {
+    height: auto;
+    width: 100%;
   }
-  .textNearPhone {
+  
+  .text-near-phone-conteiner {
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
     color:#003d48;
-    .textNearPhoneFirstPart {
+    .text-near-phone-first-part {
       font-family: SourceSansPro;
       font-size: 1.94rem;
       font-weight: 300;
     }
-    .textNearPhoneSecondPart {
+    .text-near-phone-second-part {
       font-size: 2.69rem;
       font-weight: 900;
     }
-    .textNearPhoneThirdPart {
+    .text-near-phone-third-part {
       font-size: 1.13rem;
       font-weight: normal;
       color: #8b8b8b;
@@ -44,30 +42,31 @@
   }
 }
 @media ( max-width: 680px){
-  .containerForPhone{
-    .textNearPhone{
-      .textNearPhoneFirstPart {
+  .container-for-phone{
+    .text-near-phone-conteiner {
+      margin-left: 20px;
+      .text-near-phone-first-part {
         font-size: 1.2rem;
       }
-      .textNearPhoneSecondPart {
+      .text-near-phone-second-part {
         font-size: 1.6rem;
       }
-      .textNearPhoneThirdPart {
+      .text-near-phone-third-part {
         font-size: 0.9rem;
       }
     } 
   }
 }
 @media ( max-width: 460px){
-  .containerForPhone{
-    .textNearPhone{
-      .textNearPhoneFirstPart {
+  .container-for-phone{
+    .text-near-phone-conteiner{
+      .text-near-phone-first-part {
         font-size: 0.8rem;
       }
-      .textNearPhoneSecondPart {
+      .text-near-phone-second-part {
         font-size: 1rem;
       }
-      .textNearPhoneThirdPart {
+      .text-near-phone-third-part {
         font-size: 0.6rem;
       }
       .button {

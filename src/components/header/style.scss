@@ -5,14 +5,9 @@
     padding: 0 40px;
     align-items: center;
 
-  .plane {
+  .plane-image {
     padding-right: 20px;
     align-self: center;
-  }
-
-  .textHeader {
-    display: flex;
-    flex-direction: column;
   }
 
   .menu {
@@ -21,7 +16,7 @@
     color: #787878;
     font-weight: bold;
 
-    .active {
+    .active-tab-menu {
       color: #6dc5dd;
     }
 

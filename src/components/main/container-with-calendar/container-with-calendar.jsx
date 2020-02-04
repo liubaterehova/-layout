@@ -1,17 +1,17 @@
 import React from 'react';
 import './style.scss';
-import { Calendar } from './calendar';
-import { Comment } from './comment';
+import { PartWithCalendar } from './calendar-part';
+import { PartWithComment } from './comment';
 
 export const ContainerWithCalendar = () => (
-  <div className="containerWithCalendar">
-    <div className="header">Vestibulum Commodo Felis</div>
-    <div className="hr" />
-    <div className="textUnderHeader">Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna</div>
-    <div className="hr" />
-    <div className="calendarAndComments">
-      <div className="calendar">
-        <Calendar
+  <div className="container-with-calendar">
+    <div className="header-in-calendar-conteiner">Vestibulum Commodo Felis</div>
+    <div className="hr-in-calendar-conteiner" />
+    <div className="second-header-in-calendar-conteiner">Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna</div>
+    <div className="hr-in-calendar-conteiner" />
+    <div className="calendar-and-comments-in-calendar-container">
+      <div className="calendar-part-in-calendar-conteiner">
+        <PartWithCalendar
           text1="Gravida Ultrice"
           text2="14 Comments"
           text3={(
@@ -20,7 +20,7 @@ export const ContainerWithCalendar = () => (
             </div>
           )}
         />
-        <Calendar
+        <PartWithCalendar
           text1="Tellus Mattis Pelle"
           text2="07 Comments"
           text3={(
@@ -29,7 +29,7 @@ export const ContainerWithCalendar = () => (
             </div>
           )}
         />
-        <Calendar
+        <PartWithCalendar
           text1="Phasellus Lacina"
           text2="22 Comment"
           text3={(
@@ -40,17 +40,16 @@ export const ContainerWithCalendar = () => (
           )}
         />
       </div>
-      <div className="comments">
-        <Comment
+      <div className="comments-part-in-calendar-conteiner">
+        <PartWithComment
           text1="“ Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing’"
           author="- John Doe"
         />
-        <Comment
+        <PartWithComment
           text1="“ Ced egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing’"
           author="- Kate Doe"
         />
       </div>
-
     </div>
   </div>
 );

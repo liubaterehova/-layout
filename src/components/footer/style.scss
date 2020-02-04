@@ -1,62 +1,62 @@
-.containerForFooter {
+.container-for-footer {
   background-color: #6dc5dd;
   display: flex;
   flex-direction: column;
-  .upperPart {
+  .upper-part-footer-container {
     background-color: #6dc5dd;
     flex:1;
     padding: 40px 20px;
     display:flex;
     align-items:center;
     justify-content: space-around;
-    .rows{
+    .header-in-footer-column{
       display:flex;
       flex-direction: column;
     }
-    .headerInFooter{
+    .header-in-footer-column{
       font-family: SourceSansPro;
       font-size: 1.25rem;
       font-weight: bold;
       letter-spacing: 0.8px;
       color: #ffffff;
     }
-    .textAfterHeader{
+    .main-text-in-footer-column{
       font-family: SourceSansPro;
-      font-size: 14px;
+      font-size: 0.88rem;
       line-height: 1.94;
       letter-spacing: 0.56px;
       color: #ffffff;
       width: 168px;
     }
   }
-  .citeInfo {
+  .cite-info-footer-conteiner {
     display: flex;
     flex-direction: column;
     width: 100%;
     
   
 
-  .footerSecondPart{
+  .cite-info{
     margin-bottom: 40px;
     display: flex;
     align-self: flex-start;
     width: 100%;
     margin-left:20px;
-  .allRights{
+  .cite-name{
     flex:36;
     font-family: SourceSansPro;
     font-size: 0.88rem;
     color: #ffffff;
     align-self:flex-start;
   }
-    .socialNetwork{
+    .social-network-in-footer{
       flex: 1;
       margin-left: auto;
     padding-right:20px;
     }
   
 }
-  .hr{
+  .hr-footer-conteiner{
     height:2px;
     width:90%;
     background-color: white;
@@ -66,36 +66,47 @@
 }
 }
 @media (max-width: 980px) {
-  .upperPart {
+  .upper-part-footer-container {
     flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    align-content: center;
+    .column-in-footer{
+      margin-top: 10px;
+    }
   }
 };
 
 @media (max-width: 600px) {
-  .containerForFooter {
-    .upperPart {
-      padding: 10px 10px;
-      .headerInFooter{
-        font-size: 1rem;
+  .conteiner-for-footer {
+    .upper-part-footer-container {
+      padding: 5px;
+      justify-content:center;
+      align-items:center;
+      .header-in-footer-column{
+        margin-top:10px;
+      }
+      .header-in-footer-column{
+        font-size: 0.6rem;
         letter-spacing: 0.4px;
       }
-      .textAfterHeader{
-        font-size: 14px;
+      .main-text-in-footer-column{
+        font-size: 0.4rem;
         line-height: 1.94;
         letter-spacing: 0.56px;
         color: #ffffff;
         width: 168px;
       }
     }
-      .citeInfo {
+      .cite-info-footer-conteiner {
         display: flex;
         flex-direction: column;
         width: 100%;
-      .footerSecondPart{
-      .allRights{
+      .cite-info{
+      .cite-name{
         font-size: 0.6rem;
       }
-        .socialNetwork{
+        .social-network-in-footer{
         padding-right:20px;
         }
       }
