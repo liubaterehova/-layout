@@ -6,7 +6,7 @@ import Arrow from '../../png/arrow.png';
 
 export const BlueColumn = ({ text1, text2 }) => (
   <div className="column-in-blue-container">
-    <img src={circle} alt="circle" className="circle" />
+    <img src={circle} alt="circle" className="circle-in-blue-container" />
     <div className="text-in-blue-container">
       <div className="header-in-blue-column">{text1}</div>
       <div className="main-text-in-blue-column">{text2}</div>

@@ -14,6 +14,7 @@ export const ContainerWithBlue = () => (
         </div>
       )}
     />
+    <div className="gap-1" />
     <BlueColumn
       text1="Vestibul auctor"
       text2={(
@@ -24,6 +25,7 @@ export const ContainerWithBlue = () => (
         </div>
       )}
     />
+    <div className="gap-1" />
     <BlueColumn
       text1="Cras ornare"
       text2={(
