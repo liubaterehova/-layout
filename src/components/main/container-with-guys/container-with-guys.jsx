@@ -3,7 +3,7 @@ import './style.scss';
 import woman from '../../png/tetka.png';
 import man from '../../png/mushik.png';
 import { PersonCard } from './person-card';
-import { SelectTab } from './select-tab';
+import SelectTab from './select-tab';
 
 export const ContainerWithGuys = () => (
   <div className="container-with-guys">

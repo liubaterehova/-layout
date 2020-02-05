@@ -54,6 +54,7 @@
       width: 21.43rem;
       .select-tab-upper-part {
         .tab-active {
+          transition: 2s;
           width: 6.44rem;
           height: 2.81rem;
           border-radius: 5px 5px 0 0;
@@ -64,13 +65,13 @@
           line-height: 1.8;
           font-weight: bold;
           border: none;
+          cursor: pointer;
           background-color: rgb(0, 61, 72);
           color: rgb(247, 116, 98);
         }
         .tab-no-active {
           @extend .tab-active;
           border: 1px solid rgb(120, 120, 120);
-          margin-left: 6px;
           background-color: white;
           color: rgb(120, 120, 120);
         }

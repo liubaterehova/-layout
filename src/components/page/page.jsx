@@ -1,21 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Header } from '../header/header';
 import { Main } from '../main/main/main';
 import { Footer } from '../footer/footer';
 import './style.scss';
 
-export const Page = () =>
-// const [scrolling, makeNoScroll] = useState('');
+export default class Page extends Component {
+  state = {
+    scrollProperty: '',
+  };
 
-// const changeScroll = () => {
-//   makeNoScroll('');
-// };
+  changeScroll = (classNameForScroll) => {
+    this.setState({ scrollProperty: classNameForScroll });
+  };
 
-  (
-    <div>
-      <Header />
-      <Main />
-      <Footer />
-    </div>
-  );
-
+  render() {
+    return (
+      <div className={`page ${this.state.scrollProperty}`}>
+        <Header changeScroll={this.changeScroll} />
+        <Main />
+        <Footer />
+      </div>
+    );
+  }
+}

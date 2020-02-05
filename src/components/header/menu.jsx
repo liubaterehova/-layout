@@ -1,21 +1,24 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import './style.scss';
 import menuforphone from '../png/menuAdaptive.png';
 
-export const Menu = () => {
+export const Menu = ({ changeScroll }) => {
   const [visibleMenu, changeVisibleMenu] = useState('menu-in-big-screen');
   const [visibleStick, hideStick] = useState('');
-  const [mainMenu, changemainMenu] = useState('');
+  const [mainMenu, changeMenuFromMobileToDestop] = useState('');
 
   const changeVisibility = () => {
     if (visibleMenu === 'menu-in-big-screen') {
       changeVisibleMenu('show-menu');
       hideStick('stick-for-phone-screen');
-      changemainMenu('menu-layout');
+      changeMenuFromMobileToDestop('menu-layout');
+      changeScroll('no-scroll');
     } else {
       changeVisibleMenu('menu-in-big-screen');
-      changemainMenu('');
+      changeMenuFromMobileToDestop('');
       hideStick('');
+      changeScroll('');
     }
   };
 
@@ -36,4 +39,8 @@ export const Menu = () => {
       </div>
     </div>
   );
+};
+
+Menu.propTypes = {
+  changeScroll: PropTypes.func.isRequired,
 };

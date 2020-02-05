@@ -12,6 +12,7 @@
     display: flex;
     color: #787878;
     font-weight: bold;
+    
     .active-tab-menu {
       color: #6dc5dd;
     }
@@ -20,9 +21,10 @@
     }
   }
   .menu {
-    margin-left: auto;
+    margin-left: auto; 
   }
   .menu-layout {
+    transition: 2s;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -43,12 +45,14 @@
       background: rgba(258, 234, 234, 0.9)
     }
     .show-menu {
+      display: flex;
+      flex-direction: column;
+      transition-property: flex;
+      transition-duration: 10s;
       width: 100px;
       height: 100vh;
       text-align: center;
       background: rgba(258, 234, 234, 0.9);
-      display: flex;
-      flex-direction: column;
       div {
         margin:10px;
       }
