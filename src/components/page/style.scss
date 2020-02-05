@@ -1,14 +1,8 @@
-html {
-  font-size: 16px;
-  overflow-x: hidden;
-}
-body {
-  padding: 0;
-  margin: 0 !important;
-}
 .page {
   display: flex;
   flex-direction: column;
-  width: 100%;
   background-color: #ffffff;
+  .no-scroll {
+    overflow: hidden;
+  }
 }

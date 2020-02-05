@@ -2,7 +2,7 @@
   display: flex;
   background-color: #ffffff;
   padding: 40px;
-  .div-menu-in-screen-for-phone {
+  .div-for-button-menu {
     display: none;
   }
   .plane-image {
@@ -10,7 +10,6 @@
   }
   .menu-in-big-screen {
     display: flex;
-    margin-left: auto;
     color: #787878;
     font-weight: bold;
     .active-tab-menu {
@@ -20,6 +19,44 @@
       margin: 10px;
     }
   }
+  .menu {
+    margin-left: auto;
+  }
+  .menu-layout {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    align-content: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2; 
+    text-align: right;
+    color: black; 
+    .div-for-button-menu {
+      background: rgba(258, 234, 234, 0.9)
+    }
+    .show-menu {
+      width: 100px;
+      height: 100vh;
+      text-align: center;
+      background: rgba(258, 234, 234, 0.9);
+      display: flex;
+      flex-direction: column;
+      div {
+        margin:10px;
+      }
+    }
+  }
+  .stick-for-phone-screen {
+    display: none;
+  }
 }
 
 @media (max-width: 800px) {
@@ -28,11 +65,19 @@
     .menu-in-big-screen {
       display: none;
     }
-    .div-menu-in-screen-for-phone {
-      display: inline-block;
-      width: 50px;
+    .div-for-button-menu {
+      display: block;
+      width: 100px;
       height: 50px;
-      margin-left: auto;
+      text-align:center;
+      background: none;
+      .button-for-show-menu {
+        width:50px;
+        height:50px;
+        border: none;
+        background: none;
+        cursor: pointer;
+      }
       .menu-img {
         width: auto;
         height: 100%;
