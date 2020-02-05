@@ -1,19 +1,19 @@
 .container-for-phone {
-  background-image: linear-gradient(to top, #ffffff, #e7e7e7);
-  display:flex;
+  display: flex;
   justify-content: space-evenly;
-  padding-top:3.13rem;
+  padding-top: 3.13rem;
+  background-image: linear-gradient(to top, #ffffff, #e7e7e7);
+  font-family: SourceSansPro;
   .phone-img {
     height: auto;
     width: 100%;
   }
   .text-near-phone-conteiner {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    color:#003d48;
+    color: #003d48;
     .text-near-phone-first-part {
-      font-family: SourceSansPro;
       font-size: 1.94rem;
       font-weight: 300;
     }
@@ -26,21 +26,20 @@
       color: #8b8b8b;
     }
     .button {
-        width: 8.25rem;
-        height: 2.94rem;
-        background-color: #f77462;
-        border-radius: 10px;
-        .text-in-button-phone {
-          font-size: 1.13rem;
-          color: #ffffff;
-          font-family: SourceSansPro;
-        }
+      width: 8.25rem;
+      height: 2.94rem;
+      border-radius: 10px;
+      background-color: #f77462;
+      .text-in-button-phone {
+        font-size: 1.13rem;
+        color: #ffffff;
+      }
     }
   }
 }
 
 @media ( max-width: 680px) {
-  .container-for-phone{
+  .container-for-phone {
     .text-near-phone-conteiner {
       margin-left: 20px;
       .text-near-phone-first-part {
@@ -52,11 +51,12 @@
       .text-near-phone-third-part {
         font-size: 0.9rem;
       }
-    } 
+    }
   }
 }
+
 @media ( max-width: 460px) {
-  .container-for-phone{
+  .container-for-phone {
     .text-near-phone-conteiner {
       .text-near-phone-first-part {
         font-size: 0.8rem;
@@ -72,11 +72,11 @@
         height: 1.4rem;
         border-radius: 3px;
         .text-in-button-phone {
-          font-size: 0.4rem;
-          line-height: 0.02;
+        font-size: 0.3rem;
+        line-height: 0.1;
         }
       }
-    } 
+    }
   }
 }
 

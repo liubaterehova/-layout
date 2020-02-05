@@ -1,8 +1,8 @@
 import React from 'react';
 import { ContainerWithPhone } from '../container-with-phone/container-with-phone';
-import { ContainerWithBlue } from '../container-with-blue/container-with-blue';
+import { ContainerWithBlueBg } from '../container-with-blue-bg/container-with-blue-bg';
 import { ContainerWithGuys } from '../container-with-guys/container-with-guys';
-import { ContainerWithOrange } from '../container-with-orange/container-with-orange';
+import { ContainerWithOrangeBg } from '../container-with-orange-bg/container-with-orange-bg';
 import { ContainerWithCalendar } from '../container-with-calendar/container-with-calendar';
 
 import './style.scss';
@@ -10,9 +10,9 @@ import './style.scss';
 export const Main = () => (
   <div className="containerForMain">
     <ContainerWithPhone />
-    <ContainerWithBlue />
+    <ContainerWithBlueBg />
     <ContainerWithGuys />
-    <ContainerWithOrange />
+    <ContainerWithOrangeBg />
     <ContainerWithCalendar />
   </div>
 );

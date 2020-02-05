@@ -1,16 +1,16 @@
 .container-with-calendar {
-    background-color: #ffffff;
-    width:100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing:border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-family: SourceSansPro;
+  background-color: #ffffff;
   .first-header-in-calendar-conteiner {
-    text-align: center;
     display: flex;
     align-items: center;
-    font-family: SourceSansPro;
+    text-align: center;
     padding: 40px;
     font-size: 2rem;
     font-weight: bold;
@@ -18,23 +18,22 @@
     color: #003d48;
   }
   .second-header-in-calendar-conteiner {
-    font-family: SourceSansPro;
+    text-align: center;
     font-size: 1.4rem;
     font-weight: 300;
     line-height: 1.31;
-    text-align: center;
     color: #6dc5dd;
   }
   .hr-in-calendar-conteiner {
-    background-color: rgb(236, 236, 236);
-    margin:10px;
     width: 97%;
-    height: 2px; 
+    height: 2px;
+    margin: 10px;
+    background-color: rgb(236, 236, 236);
   }
   .calendar-and-comments-in-calendar-container {
-    margin-top: 30px;
     display: flex;
     flex: 1;
+    margin-top: 30px;
     .calendar-part-in-calendar-conteiner {
       display: flex;
       flex: 1;
@@ -42,18 +41,18 @@
       justify-content: space-between;
       align-items: flex-end;
       .card-with-calendar {
-        width:75%;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
         height: 100%;
-        margin-bottom:10px;
+        width: 75%;
+        margin-bottom: 10px;
         .text-in-card-conteiner {
-          display:flex;
+          display: flex;
           flex-direction: column;
+          width: 50%;
           padding-left: 25px;
-          width:50%;
           .header-in-card {
             flex: 2;
             font-family: SourceSansPro;
@@ -63,14 +62,14 @@
             color: #003d48;
           }
           .number-of-comments-in-card {
-            flex:1;
+            flex: 1;
             font-family: SourceSansPro;
             font-size: 0.88rem;
             line-height: 2.06;
             color: #f77462;
           }
           .main-text-in-card {
-            flex:2;
+            flex: 2;
             font-family: SourceSansPro;
             font-size: 0.94rem;
             line-height: 1.6;
@@ -85,32 +84,29 @@
       }
     }
     .comments-part-in-calendar-conteiner {
-      width: 70%;
-      flex:1;
+      flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      width: 70%;
       .card-with-comments {
-        width:80%;
+        display: flex;
+        align-items: center;
+        width: 80%;
         margin-bottom: 30px;
         border: solid 2px #ececec;
         background-color: #ececec;
-        display:flex;
-        align-items: center;
         .text-in-card-with-comment {
-          display:flex;
+          display: flex;
           flex-direction: column;
           padding-left: 10px;
-        
           .main-text-in-card-with-comment {
-            font-family: SourceSansPro;
             font-size: 0.94rem;
             line-height: 1.5;
             color: #8c9193;
           }
           .author-in-card-with-comment {
-            font-family: SourceSansPro;
             font-size: 1rem;
             font-weight: bold;
             line-height: 1.8;
@@ -118,7 +114,7 @@
           }
         }
         .message-image-in-card-with-comment {
-          padding:20px;
+          padding: 20px;
           .img-circle-in-comment-card {
             width: 100%;
             height: auto;
@@ -128,33 +124,28 @@
     }
   }
 }
+
 @media (max-width: 1100px) {
   .container-with-calendar {
-    .calendar-and-comments-in-calendar-container{
+    .calendar-and-comments-in-calendar-container {
       flex-direction: column;
       align-items: center;
       .calendar-part-in-calendar-conteiner {
-<<<<<<< HEAD
-          .card-with-calendar {
-          // border: 2px solid red;
-          margin: auto;
-=======
         align-items: center;
-          .card-with-calendar {
+        .card-with-calendar {
           width: 90%;
-          
->>>>>>> b3207c16f5874f474e5674f1e61741cca1ecaf37
-          }
+        }
       }
       .comments-part-in-calendar-conteiner {
         width: 100%;
         .card-with-comments {
-          width:90%;
+          width: 90%;
         }
       }
     }
   }
 }
+
 @media (max-width: 600px) {
   .container-with-calendar {
     .first-header-in-calendar-conteiner {
@@ -169,10 +160,10 @@
       .calendar-part-in-calendar-conteiner {
         .card-with-calendar {
           width: 100%;
-          margin-bottom:10px;
+          margin-bottom: 10px;
           .text-in-card-conteiner {
-            padding-left:15px;
-            .header-in-card{
+            padding-left: 15px;
+            .header-in-card {
               font-size: 0.8rem;
               line-height: 1.4;
             }
@@ -190,7 +181,7 @@
       .comments-part-in-calendar-conteiner {
         width: 100%;
         .card-with-comments {
-          width:100%;
+          width: 100%;
           .main-text-in-card-with-comment {
             font-size: 0.85rem;
             line-height: 1.2;
@@ -200,7 +191,7 @@
             line-height: 1.4;
           }
           .message-image-in-card-with-comment {
-            padding:20px;
+            padding: 20px;
           }
         }
       }
@@ -213,9 +204,9 @@
     .calendar-and-comments-in-calendar-container {
       .calendar-part-in-calendar-conteiner {
         .card-with-calendar {
-          margin-bottom:10px;
+          margin-bottom: 10px;
           .text-in-card-conteiner {
-            padding-left:15px;
+            padding-left: 15px;
             .header-in-card {
               font-size: 0.8rem;
               line-height: 1.4;
@@ -242,10 +233,11 @@
             line-height: 1.4;
           }
           .message-image-in-card-with-comment {
-            padding:10px;
+            padding: 10px;
           }
         }
       }
     }
   }
 }
+

@@ -1,0 +1,100 @@
+.container-with-blue {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #6dc5dd;
+  font-family: SourceSansPro;
+  color: #ffffff;
+  padding: 40px;
+  .gap-1 {
+    flex: 1 0 20px;
+  }
+  .column-in-blue-container {
+    display: flex;
+    flex: 6;
+    flex-direction: row;
+    height: 100%;
+    .circle-in-blue-container {
+      align-self: start;
+      margin-right: 20px;
+      height: 65px;
+    }
+    .text-in-blue-container {
+      display: flex;
+      flex-direction: column;
+      align-content: flex-start;
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: 100%;
+      .header-in-blue-column {
+        font-size: 1.3rem;
+        font-weight: bold;
+        line-height: 1.44;
+        margin-bottom: 10px;
+      }
+      .main-text-in-blue-column {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 10px;
+      }
+      .text-and-arrow-in-blue-column {
+        display: flex;
+        .arrow {
+          align-self: center;
+          padding-left: 10px;
+        }
+        .text-before-arrow {
+          font-size: 1rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .container-with-blue {
+    flex-direction: column;
+    .column-in-blue-container {
+      flex: none;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container-with-blue {
+    padding: 8px;
+    .column-in-blue-container {
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      .circle-in-blue-container {
+        height: 40px;
+      }
+      .text-in-blue-container {
+        justify-content: center;
+        .header-in-blue-column {
+          font-size: 0.8rem;
+          font-weight: bold;
+          line-height: 1.10;
+        }
+        .main-text-in-blue-column {
+          font-size: 0.6rem;
+          line-height: 1.2;
+        }
+        .text-and-arrow-in-blue-column {
+          display: flex;
+          .arrow {
+            align-self: center;
+            padding-left: 10px;
+          }
+          .text-before-arrow {
+            font-size: 0.6rem;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+

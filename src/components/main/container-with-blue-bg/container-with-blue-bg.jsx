@@ -2,7 +2,7 @@ import React from 'react';
 import './style.scss';
 import { BlueColumn } from './blue-column';
 
-export const ContainerWithBlue = () => (
+export const ContainerWithBlueBg = () => (
   <div className="container-with-blue">
     <BlueColumn
       text1="Ausce Cellentes"

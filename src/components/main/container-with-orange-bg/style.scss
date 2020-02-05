@@ -1,19 +1,19 @@
 .container-with-orange-bg {
-  background-color: #f77462;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing:border-box;
+  box-sizing: border-box;
+  background-color: #f77462;
   .text-in-orange-container {
-    padding: 30px;
     width: 40%;
+    padding: 30px;
     font-family: SourceSansPro;
     font-size: 2rem;
     font-weight: bold;
     line-height: 0.9;
     text-align: center;
     color: #ffffff;
-    .text-under-header-in-orange-container {
+    .main-text-in-orange-container {
       padding: 20px;
       font-size: 1.13rem;
       font-weight: 300;
@@ -36,3 +36,6 @@
     }
   }
 }
+
+
+

@@ -1,35 +1,34 @@
-
 .container-with-guys {
-  background-color: #ffffff;
   display: flex;
-  padding:20px;
   justify-content: space-evenly;
+  padding: 20px;
+  background-color: #ffffff;
   .people-in-container {
+    display: flex;
+    flex-direction: column;
+    .person-in-container-guys {
       display: flex;
-      flex-direction: column;
-      .person-in-container-guys {
-        justify-content: flex-end;
-        display: flex;
-        padding-bottom:20px;
-        .person-photo-in-container-guys{
-          flex: 1 0 85px;
-          .photo-in-container-guys {
-            height: auto;
-            width: 100%;
-          }
+      justify-content: flex-end;
+      padding-bottom: 20px;
+      .person-photo-in-container-guys {
+        flex: 1 0 85px;
+        .photo-in-container-guys {
+          height: auto;
+          width: 100%;
         }
+      }
       .text-near-photo-container {
         flex: 5;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
-        padding-left:20px;
+        padding-left: 20px;
         .text-near-photo-header {
-          color: #003d48;
           font-size: 1.25rem;
           font-weight: bold;
           line-height: 1.44;
+          color: #003d48;
         }
         .text-near-photo-main-part {
           font-size: 1rem;
@@ -44,200 +43,179 @@
           color: rgb(255, 255, 255);
           text-transform: uppercase;
           line-height: 1.92;
-          background-color: #f77462;
           border: none;
+          background-color: #f77462;
         }
       }
     }
   }
   .table-in-container {
-    .select-tab-container{
+    .select-tab-container {
       width: 21.43rem;
       .select-tab-upper-part {
         .tab-active {
-          border-radius:5px 5px 0 0;
-          border-style: solid;
-          border-width: 2px;
           width: 6.44rem;
           height: 2.81rem;
+          border-radius: 5px 5px 0 0;
+          border-style: solid;
+          border-width: 2px;
           font-size: 1rem;
           font-family: "SourceSansPro";
           line-height: 1.8;
           font-weight: bold;
+          border: none;
           background-color: rgb(0, 61, 72);
           color: rgb(247, 116, 98);
-          border:none;
         }
         .tab-no-active {
           @extend .tab-active;
-          background-color: white;
-          color: rgb(120, 120, 120);
           border: 1px solid rgb(120, 120, 120);
           margin-left: 6px;
-          }
-        }
-        .text-in-selected-tab-container{
-          background-color: #003d48;
-          padding: 20px;
-          
-          .header-in-selected-tab {
-            font-family: "SourceSansPro";
-            color: rgb(109, 197, 221);
-            font-weight: bold;
-            line-height: 1.44;
-            text-align: left;
-          }
-          .main-text-in-selected-tab {
-            font-size: 0.94rem;
-            font-family: "SourceSansPro";
-            color: white;
-            line-height: 1.6;
-            text-align: justify;
-          }
+          background-color: white;
+          color: rgb(120, 120, 120);
         }
       }
-        .select-tab-down-part {
-            border-style: solid;
-            border-width: 2px;
-            border-color: rgb(236, 236, 236);
-            background-color: rgb(255, 255, 255);
-            display: flex;
-          
-            .arrows-imgs-in-down-part {
-              padding-top:20px;
-              padding-left: 10px;
-              .image-arrow {
-                height: auto;
-                width: 100%;
-              }
-            }
-            .hrForLi {
-              background-color: rgb(236, 236, 236);
-              width: 97%;
-              height: 2px; 
-            }
-            li {
-              padding-bottom: 0.94rem;
-              list-style-type: none; 
-            }
-          }
+      .text-in-selected-tab-container {
+        padding: 20px;
+        font-family: "SourceSansPro";
+        background-color: #003d48;
+        .header-in-selected-tab {
+          font-weight: bold;
+          line-height: 1.44;
+          text-align: left;
+          color: rgb(109, 197, 221);
+        }
+        .main-text-in-selected-tab {
+          font-size: 0.94rem;
+          color: white;
+          line-height: 1.6;
+          text-align: justify;
         }
       }
+    }
+    .select-tab-down-part {
+      display: flex;
+      border-style: solid;
+      border-width: 2px;
+      border-color: rgb(236, 236, 236);
+      background-color: rgb(255, 255, 255);
+      .arrows-imgs-in-down-part {
+        padding-top: 20px;
+        padding-left: 10px;
+        .image-arrow {
+          height: auto;
+          width: 100%;
+        }
+      }
+      .hrForLi {
+        width: 97%;
+        height: 2px;
+        background-color: rgb(236, 236, 236);
+      }
+      li {
+        padding-bottom: 0.94rem;
+        list-style-type: none;
+      }
+    }
+  }
+}
 
-  @media (max-width: 1100px) {
-      .container-with-guys{
-        flex-direction: column;
-        .table-in-container  {
-          align-self: center;
-        }
-        .people-in-container {
-          width: 100%
-        }
-      }
+@media (max-width: 1100px) {
+  .container-with-guys {
+    flex-direction: column;
+    .table-in-container {
+      align-self: center;
     }
-  @media (max-width: 680px) {
-    .container-with-guys{
-      .people-in-container {
-        .person-in-container-guys {
-          .text-near-photo-container {
-            .text-near-photo-header {
-              font-size: 1rem;
-              line-height: 1.20;
-            }
-            .text-near-photo-main-part {
-              font-size: 0.8rem;
-              line-height: 1.2;
-            }
-            .button-for-guys-container {
-              width: 3rem;
-              height: 2rem;
-              font-size: 0.6rem;
-              font-family: "SourceSansPro";
-              color: rgb(255, 255, 255);
-              text-transform: uppercase;
-              line-height: 1.92;
-              background-color: #f77462;
-              border: none;
-            }
-          }
-        } 
-      }
+    .people-in-container {
+      width: 100%
     }
-    
   }
-  @media (max-width: 480px) {
-    .container-with-guys {
-      .people-in-conteine {
-        .person-in-container-guys {
-          .text-near-photo-container {
-            .text-near-photo-header {
-              font-size: 0.8rem;
-              line-height: 1.20;
-            }
-            .text-near-photo-main-part {
-              font-size: 0.6rem;
-              line-height: 1.2;
-            }
-      
-            .button {
-              width: 2rem;
-              height: 1rem;
-              font-size: 0.4rem;
-              font-family: "SourceSansPro";
-              color: rgb(255, 255, 255);
-              text-transform: uppercase;
-              line-height: 1.92;
-            }
+}
+
+@media (max-width: 680px) {
+  .container-with-guys {
+    .people-in-container {
+      .person-in-container-guys {
+        .text-near-photo-container {
+          .text-near-photo-header {
+            font-size: 1rem;
+            line-height: 1.20;
           }
-        } 
-      }
-      .table-in-container {
-        .select-tab-container{
-          width: 18rem;
-          .select-tab-upper-part {
-            .tab-active {
-              border-radius:5px 5px 0 0;
-              width: 2.7rem;
-              height: 1.8rem;
-              font-size: 0.5rem;
-              font-family: "SourceSansPro";
-              line-height: 1.4;
-              font-weight: bold;
-            }
-            .text-in-selected-tab-container {
-              .header-in-selected-tab {
-                font-family: "SourceSansPro";
-                font-size: 0.6rem;
-                color: rgb(109, 197, 221);
-                font-weight: bold;
-                line-height: 1.24;
-                text-align: left;
-              }
-              .main-text-in-selected-tab {
-                font-size: 0.54rem;
-                font-family: "SourceSansPro";
-                color: white;
-                line-height: 1.6;
-                text-align: justify;
-              }
-            }
+          .text-near-photo-main-part {
+            font-size: 0.8rem;
+            line-height: 1.2;
           }
-          .select-tab-down-part {
-            .arrows-imgs-in-down-part {
-              display: none;
-            }
-            .hrForLi {
-              width: 97%;
-              height: 2px; 
-            }
-            li {
-              font-size:0.7rem;
-              padding-bottom: 0.6rem;
-              list-style-type: none; 
-            }
+          .button-for-guys-container {
+            width: 3rem;
+            height: 2rem;
+            font-size: 0.6rem;
+            line-height: 1.92;
           }
         }
       }
     }
   }
- 
+}
+
+@media (max-width: 480px) {
+  .container-with-guys {
+    .people-in-conteine {
+      .person-in-container-guys {
+        .text-near-photo-container {
+          .text-near-photo-header {
+            font-size: 0.8rem;
+            line-height: 1.20;
+          }
+          .text-near-photo-main-part {
+            font-size: 0.6rem;
+            line-height: 1.2;
+          }
+          .button {
+            width: 2rem;
+            height: 1rem;
+            font-size: 0.4rem;
+            line-height: 1.92;
+          }
+        }
+      }
+    }
+    .table-in-container {
+      .select-tab-container {
+        width: 18rem;
+        .select-tab-upper-part {
+          .tab-active {
+            width: 2.7rem;
+            height: 1.8rem;
+            font-size: 0.5rem;
+            line-height: 1.4;
+          }
+          .text-in-selected-tab-container {
+            .header-in-selected-tab {
+              font-size: 0.6rem;
+              line-height: 1.24;
+            }
+            .main-text-in-selected-tab {
+              font-size: 0.54rem;
+              line-height: 1.6;
+            }
+          }
+        }
+        .select-tab-down-part {
+          .arrows-imgs-in-down-part {
+            display: none;
+          }
+          .hrForLi {
+            width: 97%;
+            height: 2px;
+          }
+          li {
+            font-size: 0.7rem;
+            padding-bottom: 0.6rem;
+            list-style-type: none;
+          }
+        }
+      }
+    }
+  }
+}
+
