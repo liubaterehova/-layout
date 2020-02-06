@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './style.scss';
+import './container-with-guys.scss';
 import Arrows from '../../png/fiveArrows.png';
 
 export default class SelectTab extends Component {
@@ -49,7 +49,9 @@ export default class SelectTab extends Component {
           </div>
         </div>
         <div className="select-tab-down-part">
-          <div className="arrows-imgs-in-down-part"><img src={Arrows} alt="arrows" className="image-arrow" /></div>
+          <div className="arrows-imgs-in-down-part">
+            <img src={Arrows} alt="arrows" className="image-arrow" />
+          </div>
           <div>
             <ul>
               {/* TODO: Please, save all text in array and use .map() for render */}

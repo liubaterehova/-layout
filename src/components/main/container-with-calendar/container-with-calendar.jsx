@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.scss';
+import './container-with-calendar.scss';
 import { PartWithCalendar } from './calendar-part';
 import { PartWithComment } from './comment';
 
@@ -16,7 +16,7 @@ export const ContainerWithCalendar = () => (
           text2="14 Comments"
           text3={(
             <div>Suspendisse ac urna. Etiam pellentesque mauris ut lectus nunc tellus ante, mattis eget,
-      gravida vitae, ultricies atinvio
+              gravida vitae, ultricies atinvio
             </div>
           )}
         />
@@ -25,7 +25,7 @@ export const ContainerWithCalendar = () => (
           text2="07 Comments"
           text3={(
             <div>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a,
-          ultricies in, diam. Sed arcu
+              ultricies in, diam. Sed arcu
             </div>
           )}
         />
@@ -34,8 +34,8 @@ export const ContainerWithCalendar = () => (
           text2="22 Comment"
           text3={(
             <div>Lospendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc
-          tellus ante,
-          mattis eget, gravida vitae, ultricies atinvio
+              tellus ante,
+              mattis eget, gravida vitae, ultricies atinvio
             </div>
           )}
         />

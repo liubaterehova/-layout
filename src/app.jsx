@@ -1,22 +1,33 @@
 import React, { Component } from 'react';
+import classNames from 'classnames';
+
 import { Header } from './components/header/header';
 import { Main } from './components/main/main/main';
 import { Footer } from './components/footer/footer';
+
 import './style.scss';
 
 export default class App extends Component {
   state = {
-    scrollProperty: '', // TODO:
+    isModalShow: false,
   };
 
-  changeScroll = (classNameForScroll) => {
-    this.setState({ scrollProperty: classNameForScroll });
+  toggleModal = () => {
+    this.setState(prevState => ({
+      isModalShow: !prevState.isModalShow,
+    }));
   };
 
   render() {
     return (
-      <div className={`app ${this.state.scrollProperty}`}>
-        <Header changeScroll={this.changeScroll} />
+      <div className={classNames('app', {
+        'no-scroll': this.state.isModalShow,
+      })}
+      >
+        <Header
+          toggleModal={this.toggleModal}
+          isModalShow={this.state.isModalShow}
+        />
         <Main />
         <Footer />
       </div>

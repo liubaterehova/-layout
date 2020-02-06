@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './style.scss';
+import './footer.scss';
 
 export const FooterColumn = ({ firstRow, secondRow }) => (
   <div className="column-in-footer">

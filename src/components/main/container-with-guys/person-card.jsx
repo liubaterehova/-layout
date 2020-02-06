@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './style.scss';
+import './container-with-guys.scss';
 
 export const PersonCard = ({
   photo, altForPhoto, text1, text2,

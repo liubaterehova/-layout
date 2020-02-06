@@ -1,7 +1,7 @@
 import React from 'react';
-import './style.scss';
+import './footer.scss';
 import { FooterColumn } from './footer-column';
-import { CiteInfo } from './footer-cite-info';
+import { SiteInfo } from './footer-site-info';
 
 export const Footer = () => (
   <div className="container-for-footer">
@@ -67,6 +67,6 @@ export const Footer = () => (
         )}
       />
     </div>
-    <CiteInfo />
+    <SiteInfo />
   </div>
 );

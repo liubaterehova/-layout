@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.scss';
+import './container-with-calendar.scss';
 import PropTypes from 'prop-types';
 import data from '../../png/data.png'; // TODO: Same
 import Arrow from '../../png/littleArrow.png'; // TODO: Same

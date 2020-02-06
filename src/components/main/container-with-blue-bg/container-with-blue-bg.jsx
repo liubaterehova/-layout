@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.scss';
+import './container-with-blue-bg.scss';
 import { BlueColumn } from './blue-column';
 
 // TODO: We should put all data in array and use .map() for render
@@ -11,7 +11,7 @@ export const ContainerWithBlueBg = () => (
         <div>
           Phasellus ultrices nulla quis nibh.
           Quisque a lectus. Donec consectetuer
-         ligula vulputate sem tristique
+          ligula vulputate sem tristique
         </div>
       )}
     />
@@ -33,7 +33,7 @@ export const ContainerWithBlueBg = () => (
         <div>
           Simasellus ultrices nulla quis nibh.
           Quisque a lectus. Donec consectetuer
-         ligula vulputate sem tristique
+          ligula vulputate sem tristique
         </div>
       )}
     />
