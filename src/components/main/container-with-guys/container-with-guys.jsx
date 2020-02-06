@@ -9,27 +9,34 @@ import { PersonCard } from './person-card';
 import SelectTab from './select-tab';
 
 const dataForGuys = [{
-  photo: { woman },
+  key: '0',
+  photo: woman,
   altForPhoto: 'woman',
   title: 'Lorem ipsum dolor sit amet',
   label: 'Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus tpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu',
 },
 {
-  photo: { man },
+  key: '1',
+  photo: man,
   altForPhoto: 'man',
   title: 'Sed egestas ante et vulpu',
   label: 'Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus tpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu',
 }];
-const rowsForGuys = dataForGuys.map(({
-  photo, altForPhoto, title, label,
-}) => (
-  <PersonCard
-    photo={photo}
-    altForPhoto={altForPhoto}
-    title={title}
-    text2={label}
-  />
-));
+
+const rowsForGuys = dataForGuys.map((
+  {
+    photo, altForPhoto, title, label, key,
+  },
+) =>
+  (
+    <PersonCard
+      key={key}
+      photo={photo}
+      altForPhoto={altForPhoto}
+      title={title}
+      label={label}
+    />
+  ));
 
 export const ContainerWithGuys = () => (
   <div className="container-with-guys"> {/* TODO: container with guys ?))) */}

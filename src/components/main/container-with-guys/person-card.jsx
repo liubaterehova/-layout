@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './container-with-guys.scss';
 
 export const PersonCard = ({
-  photo, altForPhoto, text1, text2,
+  photo, altForPhoto, title, label,
 }) =>
   (
     <div className="person-in-container-guys">
@@ -12,8 +12,8 @@ export const PersonCard = ({
         <img src={photo} alt={altForPhoto} className="photo-in-container-guys" />
       </div>
       <div className="text-near-photo-container">
-        <div className="text-near-photo-header">{text1}</div>
-        <div className="text-near-photo-main-part">{text2}</div>
+        <div className="text-near-photo-header">{title}</div>
+        <div className="text-near-photo-main-part">{label}</div>
         <div>
           <input type="button" className="button-for-guys-container" value="More" />
         </div>
@@ -24,6 +24,6 @@ export const PersonCard = ({
 PersonCard.propTypes = {
   photo: PropTypes.node.isRequired,
   altForPhoto: PropTypes.node.isRequired,
-  text1: PropTypes.node.isRequired,
-  text2: PropTypes.node.isRequired,
+  title: PropTypes.node.isRequired,
+  label: PropTypes.node.isRequired,
 };
