@@ -13,7 +13,7 @@ export const Menu = ({ changeScroll }) => {
     if (visibleMenu === 'menu-in-big-screen') {
       changeVisibleMenu('show-menu');
       hideStick('stick-for-phone-screen');
-      changeMenuFromMobileToDestop('menu-layout');
+      changeMenuFromMobileToDestop('menu-with-overlay');
       changeScroll('no-scroll');
       body.classList.add('no-scroll');
     } else {
