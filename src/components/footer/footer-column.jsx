@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import './footer.scss';
 
 export const FooterColumn = ({ firstRow, secondRow }) => (

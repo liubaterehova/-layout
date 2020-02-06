@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { ContainerWithPhone } from '../container-with-phone/container-with-phone';
 import { ContainerWithBlueBg } from '../container-with-blue-bg/container-with-blue-bg';
 import { ContainerWithGuys } from '../container-with-guys/container-with-guys';

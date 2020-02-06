@@ -1,43 +1,72 @@
 import React, { Component } from 'react';
+import ClassNames from 'classnames';
+
 import './container-with-guys.scss';
+
 import Arrows from '../../png/fiveArrows.png';
 
+const textForTable = [
+  {
+    id: 'firstTab',
+    tabName: 'Eronped',
+    title: 'Sedegin libero commma',
+    label: 'Simasellus ultrices nulla quis nibh Quisque a lectus Donec consectutuer ligula vulputate sem tristique sem tris',
+  },
+  {
+    id: 'secondTab',
+    tabName: 'Centro',
+    title: 'Another text for tab Centro',
+    label: 'The self-study lessons in this section are written and organised according to the levels of the Common European',
+  },
+];
+
 export default class SelectTab extends Component {
-  state = {
-    classNameForFirstTab: 'tab-active',
-    classNameForSecondTab: 'tab-no-active',
-    visibilityTextFirstTab: '',
-    visibilityTextSecondTab: 'unVisible',
-  }
+  // state = {
+  //   classNameForFirstTab: 'tab-active',
+  //   classNameForSecondTab: 'tab-no-active',
+  //   visibilityTextFirstTab: '',
+  //   visibilityTextSecondTab: 'unVisible',
+  // }
+      state = {
+        currentIDTab: '',
+      }
 
-  onClickTab = (e) => {
-    e.target.classList.remove('tab-no-active');
-    e.target.classList.add('tab-active');
+      onClickTab = (e) => { 
+        if (e.target.id === "firstTab") {
+          this.setState({
+            currentIDTab: 'firstTab',
+          })
+        }
+  // onClickTab = (e) => {
+  //   e.target.classList.remove('tab-no-active');
+  //   e.target.classList.add('tab-active');
 
-    if (e.target.nextSibling) {
-      this.setState({
-        classNameForFirstTab: 'tab-active',
-        classNameForSecondTab: 'tab-no-active',
-        visibilityTextFirstTab: '',
-        visibilityTextSecondTab: 'unVisible',
-      });
-    } else {
-      this.setState({
-        classNameForFirstTab: 'tab-no-active',
-        classNameForSecondTab: 'tab-active',
-        visibilityTextFirstTab: 'unVisible',
-        visibilityTextSecondTab: '',
-      });
-    }
-  };
+  //   if (e.target.nextSibling) {
+  //     this.setState({
+  //       classNameForFirstTab: 'tab-active',
+  //       classNameForSecondTab: 'tab-no-active',
+  //       visibilityTextFirstTab: '',
+  //       visibilityTextSecondTab: 'unVisible',
+  //     });
+  //   } else {
+  //     this.setState({
+  //       classNameForFirstTab: 'tab-no-active',
+  //       classNameForSecondTab: 'tab-active',
+  //       visibilityTextFirstTab: 'unVisible',
+  //       visibilityTextSecondTab: '',
+  //     });
+  //   }
+  // };
 
   render() {
     return (
       <div className="select-tab-container">
         <div className="select-tab-upper-part">
           <div>
-            <button type="button" className={this.state.classNameForFirstTab} onClick={this.onClickTab}>Eronped</button>
-            <button type="button" className={this.state.classNameForSecondTab} onClick={this.onClickTab}>Centro</button>
+            <button type="button" className={classNames('tab', {
+              'active': this.state.currentIDTab
+            })} onClick={this.onClickTab} id="firstTab">Eronped</button>
+            <button type="button" className={this.state.classNameForSecondTab} onClick={this.onClickTab} id="secondTab">Centro</button>
           </div>
           <div className={`${this.state.visibilityTextFirstTab} text-in-selected-tab-container`}>
             <div className="header-in-selected-tab">Sedegin libero commma</div>

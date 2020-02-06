@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+
 import './header.scss';
+
 import menuforphone from '../png/menuAdaptive.png'; // TODO:
 
 export const Menu = ({ isModalShow, toggleModal }) => {
@@ -28,31 +30,10 @@ export const Menu = ({ isModalShow, toggleModal }) => {
         'show-menu': isModalShow,
       })}
       >
-        <div className="point-menu active-tab-menu">Home</div>
-        {/* TODO: Why do you use this ? */}
-        <div className={classNames({
-          'stick-for-phone-screen': isModalShow,
-        })}
-        >|
-        </div>
+        <div className="active-tab-menu">Home</div>
         <div>About</div>
-        <div className={classNames({
-          'stick-for-phone-screen': isModalShow,
-        })}
-        >|
-        </div>
         <div>Services</div>
-        <div className={classNames({
-          'stick-for-phone-screen': isModalShow,
-        })}
-        >|
-        </div>
         <div>Portfolio</div>
-        <div className={classNames({
-          'stick-for-phone-screen': isModalShow,
-        })}
-        >|
-        </div>
         <div>Contract</div>
       </div>
     </div>
@@ -61,5 +42,5 @@ export const Menu = ({ isModalShow, toggleModal }) => {
 
 Menu.propTypes = {
   toggleModal: PropTypes.func.isRequired,
-  isModalShow: PropTypes.node.isRequired,
+  isModalShow: PropTypes.bool.isRequired,
 };

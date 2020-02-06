@@ -1,6 +1,8 @@
 import React from 'react';
-import './container-with-blue-bg.scss';
 import PropTypes from 'prop-types';
+
+import './container-with-blue-bg.scss';
+
 import circle from '../../png/circle.png';
 import Arrow from '../../png/arrow.png';
 

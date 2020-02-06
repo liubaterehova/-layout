@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import './container-with-guys.scss';
 
 export const PersonCard = ({

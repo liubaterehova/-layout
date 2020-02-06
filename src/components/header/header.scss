@@ -20,6 +20,14 @@
     }
     div {
       margin: 10px;
+      position: relative;
+      &:not(:last-child):after {
+        content: '|';
+        vertical-align: middle;
+        position: absolute;
+        right: -25%;
+        color: black
+      }
     }
   }
   .menu {
@@ -62,9 +70,6 @@
         margin:10px;
       }
     }
-  }
-  .stick-for-phone-screen {
-    display: none;
   }
 }
 

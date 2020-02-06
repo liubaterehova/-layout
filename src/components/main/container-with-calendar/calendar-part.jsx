@@ -1,6 +1,8 @@
 import React from 'react';
-import './container-with-calendar.scss';
 import PropTypes from 'prop-types';
+
+import './container-with-calendar.scss';
+
 import data from '../../png/data.png'; // TODO: Same
 import Arrow from '../../png/littleArrow.png'; // TODO: Same
 

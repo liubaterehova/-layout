@@ -1,14 +1,14 @@
 import React from 'react';
+
 import './container-with-calendar.scss';
+
 import { PartWithCalendar } from './calendar-part';
 import { PartWithComment } from './comment';
 
 export const ContainerWithCalendar = () => (
   <div className="container-with-calendar">
     <div className="first-header-in-calendar-conteiner">Vestibulum Commodo Felis</div>
-    <div className="hr-in-calendar-conteiner" />
     <div className="second-header-in-calendar-conteiner">Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna</div>
-    <div className="hr-in-calendar-conteiner" />
     <div className="calendar-and-comments-in-calendar-container">
       <div className="calendar-part-in-calendar-conteiner">
         <PartWithCalendar

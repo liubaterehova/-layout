@@ -12,8 +12,9 @@
   .column-in-blue-container {
     display: flex;
     flex: 6;
-    flex-direction: row;
     height: 100%;
+    
+
     .circle-in-blue-container {
       align-self: start;
       margin-right: 20px;

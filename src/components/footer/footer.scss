@@ -9,11 +9,10 @@
     display: flex;
     padding: 40px 20px;
     background-color: #6dc5dd;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin: 10px;
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    margin: 10px;
     }
     .header-in-footer-column {
       font-family: SourceSansPro;
@@ -37,9 +36,19 @@
   .site-info {
     display: flex;
     align-self: flex-start;
+    position: relative;
     width: 100%;
     margin-left: 20px;
-    margin-bottom: 40px;
+
+    &:before {
+      content: '';
+      vertical-align: middle;
+      position: absolute;
+      top: -10px;
+      width: 90%;
+      height: 2px;
+      background: white;
+    }
   .site-name {
     align-self: flex-start;
     flex: 36;
@@ -103,6 +112,10 @@
         flex-direction: column;
         width: 100%;
       .site-info{
+        &:before {
+          top: -3px;
+          height: 1px;
+        }
         .site-name{
           font-size: 0.6rem;
         }

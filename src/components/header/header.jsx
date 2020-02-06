@@ -1,8 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import './header.scss'; // TODO: Please, use styles import after all imports
+
 import Iconlogo from '../png/logo.png'; // TODO: It would be better if you use background-imgae: url();
 import IconPlane from '../png/plane.png'; // TODO: same
+
 import { Menu } from './menu';
 
 export const Header = ({ isModalShow, toggleModal }) => (
@@ -19,5 +22,5 @@ export const Header = ({ isModalShow, toggleModal }) => (
 
 Header.propTypes = {
   toggleModal: PropTypes.func.isRequired,
-  isModalShow: PropTypes.node.isRequired,
+  isModalShow: PropTypes.bool.isRequired,
 };

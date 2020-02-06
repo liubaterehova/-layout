@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import './container-with-calendar.scss';
+
 import circleMessage from '../../png/circleMessage.png'; // TODO: Same
 
 export const PartWithComment = ({ text1, author }) => ( // TODO: Same

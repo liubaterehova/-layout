@@ -18,11 +18,38 @@
     color: #003d48;
   }
   .second-header-in-calendar-conteiner {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
     font-size: 1.4rem;
     font-weight: 300;
     line-height: 1.31;
     color: #6dc5dd;
+    width: 100%;
+    &::after {
+      content: '';
+      position: absolute;
+      display: flex;
+      margin: auto;
+      width: 97%;
+      height: 2px;
+      left: 1%;
+      bottom: -10px;
+      background-color: rgb(236, 236, 236); 
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      display: flex;
+      margin: auto;
+      width: 97%;
+      height: 2px;
+      left: 1%;
+      top: -10px;
+      background-color: rgb(236, 236, 236); 
+    }
+    
   }
   .hr-in-calendar-conteiner {
     width: 97%;

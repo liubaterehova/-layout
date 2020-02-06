@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './container-with-orange-bg.scss';
 
 export const ContainerWithOrangeBg = () => (
