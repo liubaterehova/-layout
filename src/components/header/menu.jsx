@@ -20,6 +20,7 @@ export const Menu = ({ changeScroll }) => {
       changeVisibleMenu('menu-in-big-screen');
       changeMenuFromMobileToDestop('');
       hideStick('');
+      body.classList.remove('no-scroll');
       changeScroll('');
     }
   };
