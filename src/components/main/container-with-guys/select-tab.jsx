@@ -6,6 +6,8 @@ export default class SelectTab extends Component {
   state = {
     classNameForFirstTab: 'tab-active',
     classNameForSecondTab: 'tab-no-active',
+    visibilityTextFirstTab: '',
+    visibilityTextSecondTab: 'unVisible',
   }
 
   onClickTab = (e) => {
@@ -16,11 +18,15 @@ export default class SelectTab extends Component {
       this.setState({
         classNameForFirstTab: 'tab-active',
         classNameForSecondTab: 'tab-no-active',
+        visibilityTextFirstTab: '',
+        visibilityTextSecondTab: 'unVisible',
       });
     } else {
       this.setState({
         classNameForFirstTab: 'tab-no-active',
         classNameForSecondTab: 'tab-active',
+        visibilityTextFirstTab: 'unVisible',
+        visibilityTextSecondTab: '',
       });
     }
   };
@@ -33,9 +39,13 @@ export default class SelectTab extends Component {
             <button type="button" className={this.state.classNameForFirstTab} onClick={this.onClickTab}>Eronped</button>
             <button type="button" className={this.state.classNameForSecondTab} onClick={this.onClickTab}>Centro</button>
           </div>
-          <div className="text-in-selected-tab-container">
+          <div className={`${this.state.visibilityTextFirstTab} text-in-selected-tab-container`}>
             <div className="header-in-selected-tab">Sedegin libero commma</div>
             <div className="main-text-in-selected-tab">Simasellus ultrices nulla quis nibh Quisque a lectus Donec consectutuer ligula vulputate sem tristique sem tris</div>
+          </div>
+          <div className={`${this.state.visibilityTextSecondTab} text-in-selected-tab-container`}>
+            <div className="header-in-selected-tab">Another text for tab Centro</div>
+            <div className="main-text-in-selected-tab">The self-study lessons in this section are written and organised according to the levels of the Common European </div>
           </div>
         </div>
         <div className="select-tab-down-part">
