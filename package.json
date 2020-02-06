@@ -18,6 +18,7 @@
     "babel-loader": "^8.0.6",
     "eslint-plugin-import": "^2.20.0",
     "html-webpack-link-type-plugin": "^1.0.3",
+    "husky": "^4.2.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -47,6 +48,12 @@
     "webpack-cli": "^3.3.10",
     "webpack-dev-middleware": "^3.7.2",
     "webpack-dev-server": "^3.10.1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "[[ -n $HUSKY_BYPASS ]] || commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "yarn lint"
+    }
   },
   "repository": {
     "type": "git",

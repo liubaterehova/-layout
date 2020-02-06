@@ -1,3 +1,4 @@
+// TODO: What is that ?))
 export const changeVisibility = () => {
   if (visibleMenu === 'menu-in-big-screen') {
     changeVisibleMenu('show-menu');

@@ -1,10 +1,10 @@
 import React from 'react';
 import './style.scss';
 import PropTypes from 'prop-types';
-import data from '../../png/data.png';
-import Arrow from '../../png/littleArrow.png';
+import data from '../../png/data.png'; // TODO: Same
+import Arrow from '../../png/littleArrow.png'; // TODO: Same
 
-export const PartWithCalendar = ({ text1, text2, text3 }) => (
+export const PartWithCalendar = ({ text1, text2, text3 }) => ( // TODO: Same
   <div className="card-with-calendar">
     <div><img src={data} alt="data" /></div>
     <div className="text-in-card-conteiner">

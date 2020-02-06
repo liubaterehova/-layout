@@ -2,7 +2,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const ExtractTextPlugin = require('Extract-text-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const LinkTypePlugin = require('html-webpack-link-type-plugin').HtmlWebpackLinkTypePlugin;
 
 module.exports = {

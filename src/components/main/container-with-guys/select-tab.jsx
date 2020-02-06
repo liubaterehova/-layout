@@ -52,8 +52,9 @@ export default class SelectTab extends Component {
           <div className="arrows-imgs-in-down-part"><img src={Arrows} alt="arrows" className="image-arrow" /></div>
           <div>
             <ul>
+              {/* TODO: Please, save all text in array and use .map() for render */}
               <li>Cras ornare tristique elit  sinto sum</li>
-              <div className="hr-in-down-part" />
+              <div className="hr-in-down-part" /> {/* TODO: Why do you use */}
               <li>Integer vitae libero ac risus egestas</li>
               <div className="hr-in-down-part" />
               <li>Vestibulum commodo felis quis tortor</li>

@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import './style.scss';
-import menuforphone from '../png/menuAdaptive.png';
+import './style.scss'; // TODO:
+import menuforphone from '../png/menuAdaptive.png'; // TODO:
 
 export const Menu = ({ changeScroll }) => {
-  const [visibleMenu, changeVisibleMenu] = useState('menu-in-big-screen');
-  const [visibleStick, hideStick] = useState('');
-  const [mainMenu, changeMenuFromMobileToDestop] = useState('');
+  const [visibleMenu, changeVisibleMenu] = useState('menu-in-big-screen'); // TODO: It not necessary
+  const [visibleStick, hideStick] = useState(''); // TODO: It not necessary
+  const [mainMenu, changeMenuFromMobileToDestop] = useState(''); // TODO: It not necessary
 
-  const body = document.getElementsByTagName('body')[0];
-  const changeVisibility = () => {
+  const body = document.getElementsByTagName('body')[0]; // TODO: Really ?)))
+  const changeVisibility = () => { // TODO:
     if (visibleMenu === 'menu-in-big-screen') {
       changeVisibleMenu('show-menu');
       hideStick('stick-for-phone-screen');
@@ -34,6 +34,7 @@ export const Menu = ({ changeScroll }) => {
       </div>
       <div className={visibleMenu}>
         <div className="point-menu active-tab-menu">Home</div>
+        {/* TODO: Why do you use this ? */}
         <div className={visibleStick}>|</div>
         <div>About</div><div className={visibleStick}>|</div>
         <div>Services</div><div className={visibleStick}>|</div>

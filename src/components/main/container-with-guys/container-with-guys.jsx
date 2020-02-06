@@ -6,8 +6,8 @@ import { PersonCard } from './person-card';
 import SelectTab from './select-tab';
 
 export const ContainerWithGuys = () => (
-  <div className="container-with-guys">
-    <div className="people-in-container">
+  <div className="container-with-guys"> {/* TODO: container with guys ?))) */}
+    <div className="people-in-container"> {/* TODO: people in container ?))) */}
       <PersonCard
         photo={woman}
         altForPhoto="woman"

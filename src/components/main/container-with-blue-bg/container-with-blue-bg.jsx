@@ -2,6 +2,7 @@ import React from 'react';
 import './style.scss';
 import { BlueColumn } from './blue-column';
 
+// TODO: We should put all data in array and use .map() for render
 export const ContainerWithBlueBg = () => (
   <div className="container-with-blue">
     <BlueColumn
@@ -38,4 +39,3 @@ export const ContainerWithBlueBg = () => (
     />
   </div>
 );
-

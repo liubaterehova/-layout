@@ -6,7 +6,7 @@ import './style.scss';
 
 export default class App extends Component {
   state = {
-    scrollProperty: '',
+    scrollProperty: '', // TODO:
   };
 
   changeScroll = (classNameForScroll) => {

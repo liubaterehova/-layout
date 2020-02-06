@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './style.scss';
-import circleMessage from '../../png/circleMessage.png';
+import circleMessage from '../../png/circleMessage.png'; // TODO: Same
 
-export const PartWithComment = ({ text1, author }) => (
+export const PartWithComment = ({ text1, author }) => ( // TODO: Same
   <div className="card-with-comments">
     <div className="text-in-card-with-comment">
       <div className="main-text-in-card-with-comment">{text1}</div>
