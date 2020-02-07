@@ -1,4 +1,4 @@
-.container-for-footer {
+.container-footer {
   display: flex;
   flex-direction: column;
   background-color: #6dc5dd;
@@ -96,7 +96,7 @@
 }
 
 @media (max-width: 600px) {
-  .container-for-footer {
+  .container-footer {
     .upper-part-footer-container {
       padding: 5px;
       flex-wrap: wrap;

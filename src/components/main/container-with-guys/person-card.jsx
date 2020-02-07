@@ -14,7 +14,7 @@ export const PersonCard = ({
         <div className="text-near-photo-header">{title}</div>
         <div className="text-near-photo-main-part">{label}</div>
         <div>
-          <input type="button" className="button-for-guys-container" value="More" />
+          <input type="button" className="button-guys-container" value="More" />
         </div>
       </div>
     </div>

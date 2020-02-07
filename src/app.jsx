@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import classNames from 'classnames';
 
 import { Header } from './components/header/header';
@@ -7,30 +7,25 @@ import { Footer } from './components/footer/footer';
 
 import './style.scss';
 
-export default class App extends Component {
-  state = {
-    isModalShow: false,
+export const App = () => {
+  const [isModalShow, showModal] = useState(false);
+
+  const toggleModal = () => {
+    showModal(!isModalShow);
   };
 
-  toggleModal = () => {
-    this.setState(prevState => ({
-      isModalShow: !prevState.isModalShow,
-    }));
-  };
+  return (
+    <div className={classNames('app', {
+      'no-scroll': isModalShow,
+    })}
+    >
+      <Header
+        toggleModal={toggleModal}
+        isModalShow={isModalShow}
+      />
+      <Main />
+      <Footer />
+    </div>
+  );
+};
 
-  render() {
-    return (
-      <div className={classNames('app', {
-        'no-scroll': this.state.isModalShow,
-      })}
-      >
-        <Header
-          toggleModal={this.toggleModal}
-          isModalShow={this.state.isModalShow}
-        />
-        <Main />
-        <Footer />
-      </div>
-    );
-  }
-}

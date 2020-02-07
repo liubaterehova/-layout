@@ -41,7 +41,7 @@ const columns = headerAndLabel.map(({ header, label }) => (
 ));
 
 export const Footer = () => (
-  <div className="container-for-footer">
+  <div className="container-footer">
     <div className="upper-part-footer-container">
       {columns}
     </div>

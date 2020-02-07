@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import ClassNames from 'classnames';
 
 import './container-with-guys.scss';
@@ -45,60 +45,54 @@ const listUnderTabs = listDescriptions.map(({ key, description }) => (
   <li key={key}>{description}</li>
 ));
 
-export default class SelectTab extends Component {
-  state = {
-    currentTabId: 1,
-  }
+export const SelectTab = () => {
+  const [currentTabId, changeCurrentTabId] = useState(1);
 
-  onClickTab = (e) => {
-    this.setState({
-      currentTabId: Number(e.target.dataset.tabid),
-    });
-  }
+  const onClickTab = (e) => {
+    changeCurrentTabId(Number(e.target.dataset.tabid));
+  };
 
-  render() {
-    const { title, label } = textForTable.find(({ id }) => id === this.state.currentTabId);
+  const { title, label } = textForTable.find(({ id }) => id === currentTabId);
 
-    return (
-      <div className="select-tab-container">
-        <div className="select-tab-upper-part">
-          <div>
-            <button
-              type="button"
-              className={ClassNames('tab',
-                {
-                  active: this.state.currentTabId === 1,
-                })}
-              onClick={this.onClickTab}
-              data-tabid={1}
-            >Eronped
-            </button>
-            <button
-              type="button"
-              className={ClassNames('tab',
-                {
-                  active: this.state.currentTabId === 2,
-                })}
-              onClick={this.onClickTab}
-              data-tabid={2}
-            >
-              Centro
-            </button>
-          </div>
-          <div className={`${this.state.visibilityTextFirstTab} text-in-selected-tab-container`}>
-            <div className="header-in-selected-tab">{title}</div>
-            <div className="main-text-in-selected-tab">{label}</div>
-          </div>
+  return (
+    <div className="select-tab-container">
+      <div className="select-tab-upper-part">
+        <div>
+          <button
+            type="button"
+            className={ClassNames('tab',
+              {
+                active: currentTabId === 1,
+              })}
+            onClick={onClickTab}
+            data-tabid={1}
+          >Eronped
+          </button>
+          <button
+            type="button"
+            className={ClassNames('tab',
+              {
+                active: currentTabId === 2,
+              })}
+            onClick={onClickTab}
+            data-tabid={2}
+          >
+            Centro
+          </button>
         </div>
-        <div className="select-tab-down-part">
-          <div className="arrows-imgs-in-down-part" />
-          <div>
-            <ul>
-              {listUnderTabs}
-            </ul>
-          </div>
+        <div className="text-in-selected-tab-container">
+          <div className="header-in-selected-tab">{title}</div>
+          <div className="main-text-in-selected-tab">{label}</div>
         </div>
       </div>
-    );
-  }
-}
+      <div className="select-tab-down-part">
+        <div className="arrows-imgs-in-down-part" />
+        <div>
+          <ul>
+            {listUnderTabs}
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+};

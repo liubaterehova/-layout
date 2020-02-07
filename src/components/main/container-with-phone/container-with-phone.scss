@@ -1,4 +1,4 @@
-.container-for-phone {
+.container-phone {
   display: flex;
   justify-content: space-evenly;
   padding-top: 3.13rem;
@@ -24,7 +24,8 @@
       font-weight: 900;
     }
     .text-near-phone-description {
-      font-size: 1.13rem;
+      font-size: 1.23rem;
+      width: 80%;
       color: #8b8b8b;
     }
     .button {
@@ -41,7 +42,7 @@
 }
 
 @media ( max-width: 680px) {
-  .container-for-phone {
+  .container-phone {
     .phone-img {
       align-self: flex-end;
       height: 248px;
@@ -64,7 +65,7 @@
 }
 
 @media ( max-width: 460px) {
-  .container-for-phone {
+  .container-phone {
     padding: 0;
     .phone-img {
       height: 108px;

@@ -48,8 +48,8 @@ export const Menu = ({ isModalShow, toggleModal }) => {
     })}
     >
 
-      <button type="button" className="button-for-show-menu" onClick={toggleModal}>
-        <div className="div-for-button-menu" />
+      <button type="button" className="button-show-menu" onClick={toggleModal}>
+        <div className="div-button-menu" />
       </button>
       <div className={classNames({
         'menu-in-big-screen': !isModalShow,
