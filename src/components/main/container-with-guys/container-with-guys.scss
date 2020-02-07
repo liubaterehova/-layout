@@ -11,10 +11,17 @@
       justify-content: flex-end;
       padding-bottom: 20px;
       .person-photo-in-container-guys {
-        flex: 1 1 85px;
-        .photo-in-container-guys {
-          height: auto;
-          width: 100%;
+        &.woman {
+          flex-shrink: 0;
+          width: 243px;
+          height: 252px;
+          background: url('../../png/tetka.png') no-repeat;
+        }
+        &.man {
+          flex-shrink: 0;
+          width: 243px;
+          height: 252px;
+          background: url('../../png/mushik.png') no-repeat;
         }
       }
       .text-near-photo-container {
@@ -101,23 +108,36 @@
       border-width: 2px;
       border-color: rgb(236, 236, 236);
       background-color: rgb(255, 255, 255);
-      .arrows-imgs-in-down-part {
-        padding-top: 20px;
-        padding-left: 10px;
-        .image-arrow {
-          height: auto;
-          width: 100%;
+      div {
+        ul {
+          position: relative;
+          li {
+            padding-bottom: 0.94rem;
+            list-style-type: none;
+            &:not(:last-child):after {
+              position: absolute;
+              top: 0;
+              width: 30px;
+              height: 32px;
+              background-color: black;
+            }
+          }
         }
       }
-      .hrForLi {
-        width: 97%;
-        height: 2px;
-        background-color: rgb(236, 236, 236);
+      .arrows-imgs-in-down-part {
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 10px;
+        height: 200px;
+        background: url('../../png/fiveArrows.png') no-repeat;
+
       }
-      li {
-        padding-bottom: 0.94rem;
-        list-style-type: none;
-      }
+      // .hrForLi {
+      //   width: 97%;
+      //   height: 2px;
+      //   background-color: rgb(236, 236, 236);
+      // }
+     
     }
   }
 }
@@ -138,6 +158,18 @@
   .container-with-guys {
     .people-in-container {
       .person-in-container-guys {
+        .person-photo-in-container-guys {
+          &.woman {
+            width: 180px;
+            height: 190px;
+            background-size: 180px 190px;
+          }
+          &.man {
+            width: 180px;
+            height: 190px;
+            background-size: 180px 190px;
+          }
+        }
         .text-near-photo-container {
           .text-near-photo-header {
             font-size: 1rem;
@@ -156,13 +188,34 @@
         }
       }
     }
+    .table-in-container {
+      .select-tab-down-part {
+        .arrows-imgs-in-down-part {
+          width: 10px;
+          height: 140px;
+          background-size: 10px 140px;
+        }
+      }
+    }
   }
 }
 
 @media (max-width: 480px) {
   .container-with-guys {
-    .people-in-conteine {
+    .people-in-container {
       .person-in-container-guys {
+        .person-photo-in-container-guys {
+          &.woman {
+            width: 100px;
+            height: 100px;
+            background-size: 100px 100px;
+          }
+          &.man {
+            width: 100px;
+            height: 100px;
+            background-size: 100px 100px;
+          }
+        }
         .text-near-photo-container {
           .text-near-photo-header {
             font-size: 0.8rem;
@@ -204,11 +257,9 @@
         }
         .select-tab-down-part {
           .arrows-imgs-in-down-part {
-            display: none;
-          }
-          .hrForLi {
-            width: 97%;
-            height: 2px;
+            width: 5px;
+            height: 90px;
+          background-size: 5px 90px;
           }
           li {
             font-size: 0.7rem;

@@ -33,6 +33,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 20px 0px;
   .site-info {
     display: flex;
     align-self: flex-start;
@@ -56,11 +57,17 @@
     font-size: 0.88rem;
     color: #ffffff;
   }
-    .social-network-in-footer {
-      flex: 1;
-      margin-left: auto;
-      padding-right: 20px;
-    }
+  .facebook-logo-in-footer {
+    flex: 1;
+    width: 25px;
+    height: 25px;
+    background: url('../png/fb.png') no-repeat;
+    margin-right: 20px;
+  }
+  .twitter-logo-in-footer {
+    @extend .facebook-logo-in-footer;
+    background: url('../png/twitter.png') no-repeat;
+  }
 }
   .hr-footer-container {
     align-self: center;

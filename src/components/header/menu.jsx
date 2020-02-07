@@ -4,7 +4,34 @@ import classNames from 'classnames';
 
 import './header.scss';
 
-import menuforphone from '../png/menuAdaptive.png'; // TODO:
+const menu = [{
+  key: 0,
+  title: 'Home',
+},
+{
+  key: 1,
+  title: 'About',
+},
+{
+  key: 2,
+  title: 'Services',
+},
+{
+  key: 3,
+  title: 'Portfolio',
+},
+{
+  key: 4,
+  title: 'Contract',
+}];
+
+const listMenu = menu.map(({ key, title }, index) => {
+  if (index === 0) {
+    return (<div className="active-tab-menu" key={key}>{title}</div>);
+  }
+
+  return (<div key={key}>{title}</div>);
+});
 
 export const Menu = ({ isModalShow, toggleModal }) => {
   const body = document.getElementsByTagName('body')[0];
@@ -20,21 +47,16 @@ export const Menu = ({ isModalShow, toggleModal }) => {
       'menu-with-overlay': isModalShow,
     })}
     >
-      <div className="div-for-button-menu">
-        <button type="button" className="button-for-show-menu" onClick={toggleModal}>
-          <img src={menuforphone} alt="menu" className="menu-img" />
-        </button>
-      </div>
+
+      <button type="button" className="button-for-show-menu" onClick={toggleModal}>
+        <div className="div-for-button-menu" />
+      </button>
       <div className={classNames({
         'menu-in-big-screen': !isModalShow,
         'show-menu': isModalShow,
       })}
       >
-        <div className="active-tab-menu">Home</div>
-        <div>About</div>
-        <div>Services</div>
-        <div>Portfolio</div>
-        <div>Contract</div>
+        {listMenu}
       </div>
     </div>
   );

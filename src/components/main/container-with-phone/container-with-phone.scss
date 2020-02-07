@@ -5,8 +5,10 @@
   background-image: linear-gradient(to top, #ffffff, #e7e7e7);
   font-family: SourceSansPro;
   .phone-img {
-    height: auto;
-    width: 100%;
+    height: 348px;
+    width: 380px;
+    flex-shrink: 0;
+    background: url('../../png/phone.png') no-repeat;
   }
   .text-near-phone-conteiner {
     display: flex;
@@ -40,15 +42,21 @@
 
 @media ( max-width: 680px) {
   .container-for-phone {
+    .phone-img {
+      align-self: flex-end;
+      height: 248px;
+      width: 280px;
+      background-size: 248px 280px;
+    }
     .text-near-phone-conteiner {
       margin-left: 20px;
-      .text-near-phone-first-part {
+      .text-near-phone-label {
         font-size: 1.2rem;
       }
-      .text-near-phone-second-part {
+      .text-near-phone-title {
         font-size: 1.6rem;
       }
-      .text-near-phone-third-part {
+      .text-near-phone-description {
         font-size: 0.9rem;
       }
     }
@@ -57,14 +65,21 @@
 
 @media ( max-width: 460px) {
   .container-for-phone {
+    padding: 0;
+    .phone-img {
+      height: 108px;
+      width: 140px;
+      background-size: 108px 140px;
+    }
     .text-near-phone-conteiner {
-      .text-near-phone-first-part {
+      .text-near-phone-label {
+        font-size: 0.4rem;
+      }
+      .text-near-phone-title {
         font-size: 0.8rem;
+        line-height: 0.2;
       }
-      .text-near-phone-second-part {
-        font-size: 1rem;
-      }
-      .text-near-phone-third-part {
+      .text-near-phone-description {
         font-size: 0.6rem;
       }
       .button {

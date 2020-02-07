@@ -3,8 +3,6 @@ import ClassNames from 'classnames';
 
 import './container-with-guys.scss';
 
-import Arrows from '../../png/fiveArrows.png';
-
 const textForTable = [
   {
     id: 1,
@@ -19,6 +17,33 @@ const textForTable = [
     label: 'The self-study lessons in this section are written and organised according to the levels of the Common European',
   },
 ];
+
+const listDescriptions = [
+  {
+    key: 1,
+    description: 'Cras ornare tristique elit  sinto sum',
+  },
+  {
+    key: 2,
+    description: 'Integer vitae libero ac risus egestas',
+  },
+  {
+    key: 3,
+    description: 'Vestibulum commodo felis quis tortor',
+  },
+  {
+    key: 4,
+    description: 'Donec quis dui at dolor tempor interd',
+  },
+  {
+    key: 5,
+    description: 'Fusce lobortis lorem at ipsum semper',
+  },
+];
+
+const listUnderTabs = listDescriptions.map(({ key, description }) => (
+  <li key={key}>{description}</li>
+));
 
 export default class SelectTab extends Component {
   state = {
@@ -66,21 +91,10 @@ export default class SelectTab extends Component {
           </div>
         </div>
         <div className="select-tab-down-part">
-          <div className="arrows-imgs-in-down-part">
-            <img src={Arrows} alt="arrows" className="image-arrow" />
-          </div>
+          <div className="arrows-imgs-in-down-part" />
           <div>
             <ul>
-              {/* TODO: Please, save all text in array and use .map() for render */}
-              <li>Cras ornare tristique elit  sinto sum</li>
-              <div className="hr-in-down-part" /> {/* TODO: Why do you use */}
-              <li>Integer vitae libero ac risus egestas</li>
-              <div className="hr-in-down-part" />
-              <li>Vestibulum commodo felis quis tortor</li>
-              <div className="hr-in-down-part" />
-              <li>Donec quis dui at dolor tempor interd</li>
-              <div className="hr-in-down-part" />
-              <li>Fusce lobortis lorem at ipsum semper</li>
+              {listUnderTabs}
             </ul>
           </div>
         </div>

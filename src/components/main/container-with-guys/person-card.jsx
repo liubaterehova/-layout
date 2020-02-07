@@ -1,16 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ClassNames from 'classnames';
 
 import './container-with-guys.scss';
 
 export const PersonCard = ({
-  photo, altForPhoto, title, label,
+  sex, title, label,
 }) =>
   (
     <div className="person-in-container-guys">
-      <div className="person-photo-in-container-guys">
-        <img src={photo} alt={altForPhoto} className="photo-in-container-guys" />
-      </div>
+      <div className={ClassNames('person-photo-in-container-guys', sex)} />
       <div className="text-near-photo-container">
         <div className="text-near-photo-header">{title}</div>
         <div className="text-near-photo-main-part">{label}</div>
@@ -22,8 +21,7 @@ export const PersonCard = ({
   );
 
 PersonCard.propTypes = {
-  photo: PropTypes.node.isRequired,
-  altForPhoto: PropTypes.node.isRequired,
+  sex: PropTypes.node.isRequired,
   title: PropTypes.node.isRequired,
   label: PropTypes.node.isRequired,
 };

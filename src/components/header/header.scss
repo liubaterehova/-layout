@@ -8,7 +8,14 @@
   }
   
   .plane-image {
-    padding-right: 20px;
+    width: 65px;
+    height: 48px;
+    background: url("../png/plane.png") no-repeat;
+  }
+  .icon-logo {
+    width: 120px;
+    height: 48px;
+    background: url("../png/logo.png") no-repeat;
   }
   .menu-in-big-screen {
     display: flex;
@@ -33,6 +40,9 @@
   .menu {
     margin-left: auto; 
   }
+  .button-for-show-menu {
+    display: none;
+  }
   .menu-with-overlay {
     position: fixed;
     display: flex;
@@ -49,8 +59,13 @@
     z-index: 2; 
     background-color: rgba(0,0,0,0.5);
     color: black; 
-    .div-for-button-menu {
+    .button-for-show-menu {
+      width:100px;
       background: rgba(258, 234, 234, 0.9);
+      .div-for-button-menu {
+        margin-left: 15px;
+        background-size: 50px 50px;
+      }
     }
     :focus {
       outline-style: none;
@@ -72,36 +87,32 @@
     }
   }
 }
-
 @media (max-width: 800px) {
   .header {
     padding: 20px;
     .menu-in-big-screen {
       display: none;
     }
-    .div-for-button-menu {
+    .button-for-show-menu {
       display: block;
-      width: 100px;
-      height: 50px;
-      text-align:center;
+      width:50px;
+      height:50px;
+      border: none;
       background: none;
-      outline: none ;
-      :focus {
-        outline-style: none;
-        outline-width: 0px ;
-        outline-color: none ;
+      cursor: pointer;
+      .div-for-button-menu {
+        display: block;
+        width: 50px;
+        height: 50px;
+        outline: none ;
+        background: url('../png/menuAdaptive.png') no-repeat;
+        background-size: 50px 50px;
       }
-      .button-for-show-menu {
-        width:50px;
-        height:50px;
-        border: none;
-        background: none;
-        cursor: pointer;
-      }
-      .menu-img {
-        width: auto;
-        height: 100%;
-      }
+    }
+    :focus {
+      outline-style: none;
+      outline-width: 0px ;
+      outline-color: none ;
     }
   }
 }

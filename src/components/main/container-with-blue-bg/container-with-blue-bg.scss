@@ -13,13 +13,14 @@
     display: flex;
     flex: 6;
     height: 100%;
-    
-
     .circle-in-blue-container {
-      align-self: start;
-      margin-right: 20px;
-      height: 65px;
+      flex-shrink: 0;
+      margin-right: 15px;
+      width: 65px;
+      height: 77px;
+      background: url('../../png/circle.png') no-repeat;
     }
+    
     .text-in-blue-container {
       display: flex;
       flex-direction: column;
@@ -41,8 +42,11 @@
       .text-and-arrow-in-blue-column {
         display: flex;
         .arrow {
+          width: 20px;
+          height: 20px;
           align-self: center;
-          padding-left: 10px;
+          margin-left: 10px;
+          background: url('../../png/arrow.png') no-repeat;
         }
         .text-before-arrow {
           font-size: 1rem;
@@ -70,7 +74,7 @@
       flex: 1;
       flex-direction: row;
       .circle-in-blue-container {
-        height: 40px;
+        background-size: 40px 40px;
       }
       .text-in-blue-container {
         justify-content: center;
