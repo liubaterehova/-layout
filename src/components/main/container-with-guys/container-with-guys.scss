@@ -66,14 +66,14 @@
           height: 2.81rem;
           border-radius: 5px 5px 0 0;
           border-style: solid;
-          border: 1px solid rgb(120, 120, 120);
           font-size: 1rem;
           font-family: "SourceSansPro";
           line-height: 1.8;
           font-weight: bold;
           background-color: white;
           color: rgb(120, 120, 120);
-          border: none;
+          border: 1px solid rgb(120, 120, 120);
+          border-bottom: none;
           cursor: pointer;
             &.active {
               background-color: rgb(0, 61, 72);
@@ -108,22 +108,36 @@
       border-width: 2px;
       border-color: rgb(236, 236, 236);
       background-color: rgb(255, 255, 255);
-      div {
-        ul {
+      .list {
+        .style-item-in-list {
+          margin-top: 15px;
+          margin-left: 25px;
           position: relative;
-          li {
-            padding-bottom: 0.94rem;
-            list-style-type: none;
-            &:not(:last-child):after {
-              position: absolute;
-              top: 0;
-              width: 30px;
-              height: 32px;
-              background-color: black;
-            }
+          &:after {
+            position: absolute;
+            width: 30px;
+            height: 32px;
+            background-color: black;
           }
         }
       }
+      // div {
+      //   ul {
+      //     li {
+      //       padding-bottom: 0.94rem;
+      //       list-style-type: none;
+      //       position: relative;
+      //       &:not(:last-child):after {
+      //         position: absolute;
+      //         top: 0;
+      //         left: 20px;
+      //         width: 30px;
+      //         height: 32px;
+      //         background-color: black;
+      //       }
+      //     }
+      //   }
+      // }
       .arrows-imgs-in-down-part {
         margin-top: 20px;
         margin-left: 10px;

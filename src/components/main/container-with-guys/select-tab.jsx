@@ -42,7 +42,7 @@ const listDescriptions = [
 ];
 
 const listUnderTabs = listDescriptions.map(({ key, description }) => (
-  <li key={key}>{description}</li>
+  <div key={key} className="style-item-in-list">{description}</div>
 ));
 
 export const SelectTab = () => {
@@ -87,10 +87,8 @@ export const SelectTab = () => {
       </div>
       <div className="select-tab-down-part">
         <div className="arrows-imgs-in-down-part" />
-        <div>
-          <ul>
-            {listUnderTabs}
-          </ul>
+        <div className="list">
+          {listUnderTabs}
         </div>
       </div>
     </div>
