@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './container-with-guys.scss';
-
 import { PersonCard } from './person-card';
 import SelectTab from './select-tab';
+
+import './container-with-guys.scss';
 
 const dataForGuys = [{
   key: '0',
@@ -36,8 +36,8 @@ const rowsForGuys = dataForGuys.map((
   ));
 
 export const ContainerWithGuys = () => (
-  <div className="container-with-guys"> {/* TODO: container with guys ?))) */}
-    <div className="people-in-container"> {/* TODO: people in container ?))) */}
+  <div className="container-with-guys">
+    <div className="people-in-container">
       {rowsForGuys}
     </div>
 

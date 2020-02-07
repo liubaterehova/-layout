@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './container-with-calendar.scss';
-
 import { PartWithCalendar } from './calendar-part';
 import { PartWithComment } from './comment-part';
+
+import './container-with-calendar.scss';
 
 const calendarDatas = [{
   key: 0,

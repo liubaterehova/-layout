@@ -2,8 +2,6 @@ import React from 'react';
 
 import './container-with-phone.scss';
 
-import button from '../../png/buttonMoreInfo.png'; // TODO: Please, use backgroun-image: url()
-
 export const ContainerWithPhone = () => (
   <div className="container-for-phone">
     <div className="phone-img" />

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import './container-with-calendar.scss';
 
-export const PartWithCalendar = ({ title, numberAndComments, description }) => ( // TODO: Same
+export const PartWithCalendar = ({ title, numberAndComments, description }) => (
   <div className="card-with-calendar">
     <div className="date-img" />
     <div className="text-in-card-conteiner">

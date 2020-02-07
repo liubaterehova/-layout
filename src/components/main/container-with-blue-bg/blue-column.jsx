@@ -3,11 +3,9 @@ import PropTypes from 'prop-types';
 
 import './container-with-blue-bg.scss';
 
-export const BlueColumn = ({ title, label }) => ( // TODO: text1 ? Don't write that
+export const BlueColumn = ({ title, label }) => (
   <div className="column-in-blue-container">
-    {/* <div className="div-for-image-circle"> */}
     <div className="circle-in-blue-container" />
-    {/* </div> */}
     <div className="text-in-blue-container">
       <div className="header-in-blue-column">{title}</div>
       <div className="main-text-in-blue-column">{label}</div>

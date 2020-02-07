@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './header.scss'; // TODO: Please, use styles import after all imports
-// TODO: It would be better if you use background-imgae: url();
-// TODO: same
+import './header.scss';
 
 import { Menu } from './menu';
 

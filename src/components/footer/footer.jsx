@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './footer.scss';
-
 import { FooterColumn } from './footer-column';
 import { SiteInfo } from './footer-site-info';
+
+import './footer.scss';
 
 const headerAndLabel = [
   {

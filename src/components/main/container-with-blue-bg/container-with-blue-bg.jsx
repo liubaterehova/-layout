@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './container-with-blue-bg.scss';
-
 import { BlueColumn } from './blue-column';
+
+import './container-with-blue-bg.scss';
 
 const dataForBlueContainer = [
   {
