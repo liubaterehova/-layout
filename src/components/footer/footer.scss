@@ -7,7 +7,7 @@
   .upper-part-footer-container {
     flex: 1;
     display: flex;
-    padding: 40px 20px;
+    padding: 40px;
     background-color: #6dc5dd;
     flex: 1;
     display: flex;
@@ -39,7 +39,6 @@
     align-self: flex-start;
     position: relative;
     width: 100%;
-    margin-left: 20px;
 
     &:before {
       content: '';
